@@ -4,14 +4,20 @@ const dgram = require("dgram"),
   http = require("http"),
   mqtt = require("mqtt");
 
+// Unit configuration from environment variables
+const SPEED_UNIT = process.env.SPEED_UNIT || 'km/h';
+const POWER_UNIT = process.env.POWER_UNIT || 'kW';
+const TORQUE_UNIT = process.env.TORQUE_UNIT || 'Nm';
+const BOOST_UNIT = process.env.BOOST_UNIT || 'bar';
+
 const units = {
   rpm_percent: "%",
   bearing: "°",
   roll: "°",
-  speed: "km/h",
-  power: "kW",
-  torque: "Nm",
-  boost: "bar",
+  speed: SPEED_UNIT,
+  power: POWER_UNIT,
+  torque: TORQUE_UNIT,
+  boost: BOOST_UNIT,
 };
 
 let cache = {},
@@ -145,10 +151,41 @@ function parseData(data) {
       performance: r.CarPerformanceIndex,
       drivetrain: ["FWD", "RWD", "AWD"][r.DrivetrainType],
       cylinders: r.NumCylinders,
-      speed: nearest(r.Speed * 3.6), // kilometers per hour
-      power: nearest(r.Power * 0.001), // kilowatts
-      torque: nearest(r.Torque), // newton meter
-      boost: nearest(r.Boost * 0.068947572932), // bar
+      speed: (() => {
+        const raw = r.Speed;
+        switch (SPEED_UNIT) {
+          case 'km/h': return nearest(raw * 3.6);
+          case 'mph': return nearest(raw * 2.2369362921);
+          case 'm/s': return nearest(raw);
+          default: return nearest(raw * 3.6);
+        }
+      })(),
+      power: (() => {
+        const raw = r.Power;
+        switch (POWER_UNIT) {
+          case 'kW': return nearest(raw * 0.001);
+          case 'W': return nearest(raw);
+          case 'hp': return nearest(raw * 0.00134102);
+          default: return nearest(raw * 0.001);
+        }
+      })(),
+      torque: (() => {
+        const raw = r.Torque;
+        switch (TORQUE_UNIT) {
+          case 'Nm': return nearest(raw);
+          case 'lb-ft': return nearest(raw * 1.355818);
+          default: return nearest(raw);
+        }
+      })(),
+      boost: (() => {
+        const raw = r.Boost;
+        switch (BOOST_UNIT) {
+          case 'bar': return nearest(raw * 0.068947572932);
+          case 'psi': return nearest(raw);
+          case 'kPa': return nearest(raw * 6.8947572932);
+          default: return nearest(raw * 0.068947572932);
+        }
+      })(),
       accel: r.Accel,
       brake: r.Brake,
       handbrake: boolStr(r.HandBrake > 1),
