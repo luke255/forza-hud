@@ -132,4 +132,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## AI warning
 
-I created this project before AI was a thing. It wasn't suitable to publish then, mainly because the .env file didn't exist, and I didn't the energy to sort that, or fix the lingering issues. I apologise for any halucinated oddness!
+I created this project before AI was a thing. It wasn't suitable to publish then, mainly because the .env file didn't exist, and I didn't have the energy to sort that, or fix the lingering issues. I apologise for any halucinated oddness!
