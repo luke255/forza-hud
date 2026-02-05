@@ -87,18 +87,53 @@ recorder:
 *Remember: Only publish high-frequency data if your infrastructure can handle it.*
 
 ### Running the Application
+
+#### Using Node.js directly
 ```bash
 node app.js
 ```
 Then open `http://localhost:8080` in your web browser.
 
-#### Using PM2
+#### Using PM2 (Process Manager)
 
 If you prefer to run it in the background:
 ```bash
 npm install -g pm2
 pm2 start ecosystem.config.js
 ```
+
+#### Using Docker
+
+You can run the application in a Docker container, which provides isolation and easier deployment.
+
+**Build the image:**
+```bash
+docker build -t forza-hud .
+```
+
+**Run the container:**
+```bash
+docker run -d \
+  --name forza-hud \
+  -p 8080:8080 \
+  -p 20127:20127/udp \
+  --env-file .env \
+  --restart unless-stopped \
+  forza-hud
+```
+
+**Using Docker Compose (recommended):**
+```bash
+docker-compose up -d
+```
+
+To stop:
+```bash
+docker-compose down
+```
+
+The Docker image includes all necessary dependencies and exposes the required ports (UDP 20127 for telemetry, TCP 8080 for the web interface). Environment variables can be set in the `.env` file or passed directly.
+
 
 ## License
 

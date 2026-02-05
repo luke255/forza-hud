@@ -1,0 +1,63 @@
+# Node modules and build artifacts
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Environment files (except example)
+.env
+.env.local
+.env.*.local
+
+# Git
+.git
+.gitignore
+
+# Docker files (optional)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Logs
+logs
+*.log
+
+# Coverage
+coverage
+.nyc_output
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Project specific
+public/*.map
+dist
+build
+.cache
+.parcel-cache
+.next
+.nuxt
+.svelte-kit
+.serverless
+.dynamodb
+.firebase
+.tern-port
+.vscode-test
+.yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Temporary files
+tmp
+temp
