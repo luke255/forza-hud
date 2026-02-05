@@ -17,10 +17,11 @@ A web-based Heads-Up Display (HUD) for Forza Horizon that receives telemetry dat
 - A copy of Forza Horizon (4 or 5) set to send telemetry data.
     - **Note for Forza Horizon 4:** The Xbox version has a known bug that prevents telemetry from working. The PC version is currently untested. Forza Horizon 5 is fully supported.
 
-### Known Limitations
+### Known Limitations/Issues
 - **Home Assistant Sensors:** While many telemetry points are received, only the "Active/Running" sensor is currently published to Home Assistant to avoid overwhelming systems.
 - **Aspect ratio:** The dashboard was created for fullscreen 16:9.
-- **Fonts:** Forza uses the Amsi Pro / Amsi Pro Condensed fonts, which I can't include. It will fall back to the Google font "Barlow" if you don't have them installed.
+- **Fonts:** Forza uses the Amsi Pro / Amsi Pro Condensed fonts, which I can't include. It will fall back to the Google font "Barlow" if you don't have them installed. I am taking suggestions for closer free alternatives.
+- **Roll level:** The roll level indicator does not roate around the correct point. Though it's lined up when flat, it will drift the more you roll.
 
 ### Installation
 
