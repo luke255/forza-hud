@@ -12,15 +12,12 @@ const cache = {},
       svgBar("RPM", v);
     },
     steering: (v) => {
-      console.log(v);
       svgBar("Specs-Steering", v);
     },
     brake: (v) => {
-      console.log(v);
-      svgBar("Specs-Brake", v - 100);
+      svgBar("Specs-Brake", v - 255);
     },
     accel: (v) => {
-      console.log(v);
       svgBar("Specs-Accelerator", v);
     },
     bearing: (v) => {
