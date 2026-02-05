@@ -5,8 +5,8 @@ A web-based Heads-Up Display (HUD) for Forza Horizon that receives telemetry dat
 ## Features
 
 - **Real-time Telemetry:** View speed, RPM, gear, boost, and more.
-- **Home Assistant Integration:** Automatically discovers and updates sensors in Home Assistant via MQTT.
-- **Dynamic HUD:** Interactive SVG-based dashboard that updates in real-time.
+- **Home Assistant Integration:** Automatically publishes and updates sensors in Home Assistant via MQTT.
+- **Dynamic HUD:** SVG-based dashboard that updates in real-time.
 - **Easy Configuration:** Managed via environment variables.
 
 ## Getting Started
