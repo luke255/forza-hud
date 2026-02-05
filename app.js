@@ -36,6 +36,16 @@ initMQTT({
     {
       name: "binary_sensor",
       entities: [
+        // {
+        //   name: "Handbrake",
+        //   icon: "mdi:car-brake-parking",
+        // },
+        // {
+        //   name: "Racing",
+        //   key: "race",
+        //   options: { device_class: "running" },
+        //   icon: "mdi:traffic-light",
+        // },
         {
           name: "Active",
           options: { device_class: "running" },
