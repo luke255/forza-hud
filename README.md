@@ -15,6 +15,11 @@ A web-based Heads-Up Display (HUD) for Forza Horizon that receives telemetry dat
 
 - [Node.js](https://nodejs.org/) (v14 or later recommended)
 - A copy of Forza Horizon (4 or 5) set to send telemetry data.
+    - **Note for Forza Horizon 4:** The Xbox version has a known bug that prevents telemetry from working. The PC version is currently untested. Forza Horizon 5 is fully supported.
+
+### Known Limitations
+- **Incomplete UI Features:** The acceleration, brake, and steering bars in the HUD are not yet functional and are currently placeholders.
+- **Home Assistant Sensors:** While many telemetry points are received, only the "Active/Running" sensor is currently published to Home Assistant to avoid overwhelming systems.
 
 ### Installation
 
@@ -56,9 +61,32 @@ A web-based Heads-Up Display (HUD) for Forza Horizon that receives telemetry dat
 5.  Set **Data Out IP Address** to the IP of the machine running this application.
 6.  Set **Data Out IP Port** to match `UDP_PORT` in your `.env` (default `20127`).
 
-### Running the Application
+### Home Assistant & MQTT Performance
+
+While the application receives high-frequency data (60Hz), publishing all this to Home Assistant/MQTT is not recommended.
+
+- **Broker/HA Stress:** Exposing values that update many times per second (like `speed`, `rpm`, or `position`) can significantly stress your MQTT broker and Home Assistant instance.
+- **Database Size:** Frequent updates will cause your Home Assistant database to grow rapidly if not managed.
+
+#### Best Practices
+
+1. **Selective Publishing:** Currently, only the Active sensor is implemented for HA.
+2. **Exclude from History:** If you decide to add more sensors (like Speed), it is highly recommended to exclude them from Home Assistant's `recorder` and `history` stats.
 
 Start the server:
+**Example `configuration.yaml` for Home Assistant:**
+
+```yaml
+recorder:
+  exclude:
+    entities:
+      - sensor.forza_horizon_speed
+      - sensor.forza_horizon_rpm
+```
+
+*Remember: Only publish high-frequency data if your infrastructure can handle it.*
+
+### Running the Application
 ```bash
 node app.js
 ```
