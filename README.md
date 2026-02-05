@@ -20,6 +20,7 @@ A web-based Heads-Up Display (HUD) for Forza Horizon that receives telemetry dat
 ### Known Limitations
 - **Incomplete UI Features:** The acceleration, brake, and steering bars in the HUD are not yet functional and are currently placeholders.
 - **Home Assistant Sensors:** While many telemetry points are received, only the "Active/Running" sensor is currently published to Home Assistant to avoid overwhelming systems.
+- **Aspect ratio:** The SVG was created for fullscreen 16:9.
 
 ### Installation
 
@@ -48,9 +49,18 @@ A web-based Heads-Up Display (HUD) for Forza Horizon that receives telemetry dat
 | `MQTT_BROKER_URL` | URL of your MQTT broker (e.g., `ws://10.0.0.4:1884`) | - |
 | `MQTT_USERNAME` | Username for MQTT authentication | - |
 | `MQTT_PASSWORD` | Password for MQTT authentication | - |
+| `DEVICE_UID_PREFIX` | Prefix for Home Assistant entity unique IDs | `forza-` |
+| `DEVICE_IDENTIFIERS` | Device identifier for Home Assistant | `forza-horizon-hud` |
+| `DEVICE_MANUFACTURER` | Device manufacturer name | `Custom` |
+| `DEVICE_MODEL` | Device model name | `Forza Horizon Data` |
 | `DEVICE_NAME` | Name of the device as it appears in Home Assistant | `Forza Horizon` |
+| `DEVICE_SW_VERSION` | Software version of the device | `1` |
 | `PORT` | Port for the web dashboard | `8080` |
 | `UDP_PORT` | Port to listen for Forza telemetry data | `20127` |
+| `SPEED_UNIT` | Unit for speed display (`km/h`, `mph`, `m/s`) | `km/h` |
+| `POWER_UNIT` | Unit for power display (`kW`, `W`, `hp`) | `kW` |
+| `TORQUE_UNIT` | Unit for torque display (`Nm`, `lb-ft`) | `Nm` |
+| `BOOST_UNIT` | Unit for boost display (`bar`, `psi`, `kPa`) | `bar` |
 
 ### Forza Horizon Setup
 

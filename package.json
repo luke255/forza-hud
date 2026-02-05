@@ -1,4 +1,11 @@
 {
+  "name": "forza-hud",
+  "version": "1.0.0",
+  "description": "Forza Horizon HUD - Real-time telemetry display",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "dgram": "^1.0.1",
     "dotenv": "^17.2.3",

@@ -108,7 +108,6 @@ const cache = {},
     },
   },
   initSocket = () => {
-    // Attempt to use the host of the current page if WEBSOCKET_URL isn't set
     const host = window.location.hostname || 'localhost';
     const port = window.location.port || '8080';
     const socket = new WebSocket(`ws://${host}:${port}`);

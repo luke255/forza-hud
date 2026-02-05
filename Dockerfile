@@ -16,7 +16,7 @@ COPY . .
 # Expose ports
 # UDP port for telemetry data (default 20127)
 # HTTP port for web interface (default 8080)
-EXPOSE 8080/udp 20127/udp 8080
+EXPOSE 8080 20127/udp
 
 # Define environment variables (can be overridden)
 ENV PORT=8080 \
