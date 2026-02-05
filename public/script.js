@@ -77,6 +77,7 @@ const cache = {},
           svgDim("Speed-Digit-" + i, !light);
           bar = light;
         });
+        svgTexter("Speed-Unit", u.toUpperCase());
     },
     power: (v, u) => {
       svgTexter("Specs-Power-Value", v + " " + u);
