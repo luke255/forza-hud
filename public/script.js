@@ -123,7 +123,12 @@ const cache = {},
     }
   },
   ready = () => {
-    svg = document.getElementById("svgObject").contentDocument;
+    const svgObj = document.getElementById("svgObject");
+    if (svgObj && svgObj.contentDocument) {
+        svg = svgObj.contentDocument;
+    } else {
+        svg = document.getElementById("The_SVG");
+    }
     initSocket();
   },
   strBool = (str) => {
