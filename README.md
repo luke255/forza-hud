@@ -23,26 +23,6 @@ A web-based Heads-Up Display (HUD) for Forza Horizon that receives telemetry dat
 - **Fonts:** Forza uses the Amsi Pro / Amsi Pro Condensed fonts, which I can't include. It will fall back to the Google font "Barlow" if you don't have them installed. I am taking suggestions for closer free alternatives.
 - **Roll level:** The roll level indicator does not roate around the correct point. Though it's lined up when flat, it will drift the more you roll.
 
-### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/forza-hud.git
-    cd forza-hud
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-
-3.  **Configure the environment:**
-    Copy the example environment file and fill in your details:
-    ```bash
-    cp .env.example .env
-    ```
-    Edit `.env` and provide your MQTT broker details and other preferences.
-
 ### Configuration Options (`.env`)
 
 | Variable | Description | Default |
@@ -149,3 +129,7 @@ The Docker image includes all necessary dependencies and exposes the required po
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## AI warning
+
+I created this project before AI was a thing. It wasn't suitable to publish then, mainly because the .env file didn't exist, and I didn't the energy to sort that, or fix the lingering issues. I apologise for any halucinated oddness!
