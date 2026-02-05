@@ -31,6 +31,11 @@
         transform-box: fill-box;
         transform-origin: center center;
       }
+
+      .trail {
+        transform-box: fill-box;
+        transform-origin: left center;
+      }
     </style>
     <rect id="Background" x="0" y="0" width="3840" height="2160" style="display:inline" />
     <g id="Active" style="display:inline">
@@ -66,273 +71,270 @@
             <path id="RPM-Background"
               d="m 3425.3101,2095.2 17.95,-111.28 h -1736.19 c -8.59,0 -15.57,6.98 -15.57,15.58 l -14.36,80.12 c 0,8.6 6.9796,15.58 15.5796,15.58 z m 333.8399,-95.7 c 0,-8.6 -6.98,-15.58 -15.58,-15.58 h -300.31 l -17.95,111.28 h 303.9 c 8.6,0 15.58,-6.98 15.58,-15.58 z"
               style="display:inline;fill:#fff;fill-opacity:0.2" />
+            <path id="RPM-Trail" class="trail" data-scale="0.541855326723" style="display:inline;fill:url(#Gradient)"
+              d="m 1677.14,1983.92 h 37.1201 V 2095.2 H 1677.14 Z" />
             <path id="RPM-Redline"
               d="m 3759.15,1999.5 c 0,-8.6 -6.9796,-15.58 -15.5796,-15.58 H 3443.26 l -17.95,111.28 h 303.9 c 8.6,0 15.58,-6.98 15.58,-15.58 z"
               style="display:inline;fill:#ff4444;fill-opacity:0.51" />
-            <path id="RPM-Trail" style="display:inline;fill:url(#Gradient)"
-              d="m 1677.14,1983.92 h 37.1201 V 2095.2 H 1677.14 Z" class="trail" data-scale="0.541855326723" />
             <path id="RPM-Trail_Mask" style="display:inline;fill:#000000"
               d="m 1677.1392,1983.9207 v 95.6986 l 14.3599,-80.1184 c 0,-8.6 6.981,-15.5802 15.571,-15.5802 z m 0,95.6986 v 15.5802 h 15.5802 c -8.6,0 -15.5802,-6.9802 -15.5802,-15.5802 z" />
-            <path id="RPM-Needle" d="m 1714.2601,2095.2 17.9494,-111.28 h -21.5397 l -17.9501,111.28 z"
+            <path id="RPM-Needle" class="needle" data-scale="20.113609"
+              d="m 1714.2601,2095.2 17.9494,-111.28 h -21.5397 l -17.9501,111.28 z"
               style="display:inline; fill:#fff; filter:url(#glow);" />
           </g>
         </g>
       </g>
-      <g id="Specs" transform="translate(0,-26.995056)">
-        <rect id="Specs-Box" x="0" y="1086.09" width="1341.6801" height="1073.91" style="fill:#362e38" />
-        <path id="Specs-Lines"
-          d="M 1293.43,1973.91 H 48.248 v 10.06 H 1293.43 Z m 0,-180.97 H 48.248 v 10.07 H 1293.43 Z m 0,-181.08 H 48.248 v 10.06 H 1293.43 Z m 0,-181.08 H 48.248 v 10.06 H 1293.43 Z m 0,-181.08 H 48.248 v 10.06 H 1293.43 Z"
-          style="fill:#736e78;fill-opacity:0.6" />
-        <g id="Specs-Steering">
-          <g id="Specs-Steering-Gauge">
-            <path id="Specs-Steering-Gauge-Background"
-              d="m 1285.45,2040.96 -744.019,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.41 3.576,7.98 7.98,7.98 l 744.024,-0.02 c 4.4,0 7.98,-3.57 7.98,-7.98 l 7.35,-41.04 c 0,-4.4 -3.58,-7.98 -7.98,-7.98 z"
-              style="fill:#fff;fill-opacity:0.2" />
-            <path id="Specs-Steering-Gauge-Trail" d="m 904.01,2097.96 9.193,-57 z" style="fill:url(#_Linear5)" />
-              <path id="Specs-Steering-Gauge-Needle-Main" d="m 909.526,2097.96 9.194,-57 h -11.033 l -9.193,57 z"
-                style="fill:#fff; filter:url(#mini-glow);" />
-          </g><text x="60.30933" y="2077.8357"
-            style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
-            id="Specs-Steering-Label" transform="scale(0.98485887,1.0153739)">Steering</text>
-        </g>
-        <g id="Specs-Brake">
-          <g id="Specs-Brake-Gauge">
-            <path id="Specs-Brake-Gauge-Background"
-              d="m 531.763,1916.98 744.017,-0.02 c 4.41,0 7.98,-3.58 7.98,-7.98 l 7.36,-41.04 c 0,-4.41 -3.58,-7.98 -7.98,-7.98 l -744.022,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
-              style="fill:#fff;fill-opacity:0.2" />
-            <path id="Specs-Brake-Gauge-Trail"
-              d="m 1267.3,1916.98 9.2,-57 H 539.118 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
-              style="fill:url(#_Linear9)" />
-              <path id="Specs-Brake-Gauge-Main" d="m 1270.99,1859.96 -9.19,57 h 11.03 l 9.2,-57 z"
-                style="fill: #fff; filter:url(#mini-glow);" />
-          </g><text x="58.756775" y="1898.611"
-            style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
-            id="Specs-Brake-Label" transform="scale(0.98485887,1.0153739)">Brake</text>
-        </g>
-        <g id="Specs-Accelerator">
-          <g id="Specs-Accelerator-Gauge">
-            <path id="Specs-Accelerator-Gauge-Background"
-              d="m 1285.45,1678.88 -744.019,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 l 744.024,-0.02 c 4.4,0 7.98,-3.58 7.98,-7.98 l 7.35,-41.04 c 0,-4.41 -3.58,-7.98 -7.98,-7.98 z"
-              style="fill:#fff;fill-opacity:0.2" />
-            <path id="Specs-Accelerator-Gauge-Trail"
-              d="m 540.691,1735.9 9.193,-57 h -8.453 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
-              style="fill:url(#_Linear13)" />
-              <path id="Specs-Accelerator-Gauge-Main" d="m 546.22,1735.9 9.194,-57 h -11.033 l -9.193,57 z"
-                style="fill: #fff; filter:url(#mini-glow);" />
-          </g><text x="58.756775" y="1720.2727"
-            style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
-            id="Specs-Accelerator-Label" transform="scale(0.98485887,1.0153739)">Accelerator</text>
-        </g>
-        <g id="Specs-Boost"><text x="1310.3083" y="1541.9246"
-            style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.984859"
-            id="Specs-Boost-Value" transform="scale(0.98485887,1.0153739)">?? PSI</text><text x="58.756775"
-            y="1541.9246"
-            style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
-            id="Specs-Boost-Label" transform="scale(0.98485887,1.0153739)">Boost</text></g>
-        <g id="Specs-Torque"><text x="1310.3162" y="1363.5864"
-            style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.984859"
-            id="Specs-Torque-Value" transform="scale(0.98485887,1.0153739)">??? ft-lb</text><text x="58.645088"
-            y="1363.5864"
-            style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
-            id="Specs-Torque-Label" transform="scale(0.98485887,1.0153739)">Torque</text></g>
-        <g id="Specs-Power"><text x="1310.3132" y="1185.248"
-            style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.984859"
-            id="Specs-Power-Value" transform="scale(0.98485887,1.0153739)">???? bhp</text><text x="58.756775"
-            y="1186.1443"
-            style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
-            id="Specs-Power-Label" transform="scale(0.98485887,1.0153739)">Power</text></g>
+    </g>
+    <g id="Specs" transform="translate(0,-26.995056)">
+      <rect id="Specs-Box" x="0" y="1086.09" width="1341.6801" height="1073.91" style="fill:#362e38" />
+      <path id="Specs-Lines"
+        d="M 1293.43,1973.91 H 48.248 v 10.06 H 1293.43 Z m 0,-180.97 H 48.248 v 10.07 H 1293.43 Z m 0,-181.08 H 48.248 v 10.06 H 1293.43 Z m 0,-181.08 H 48.248 v 10.06 H 1293.43 Z m 0,-181.08 H 48.248 v 10.06 H 1293.43 Z"
+        style="fill:#736e78;fill-opacity:0.6" />
+      <g id="Specs-Steering">
+        <g id="Specs-Steering-Gauge">
+          <path id="Specs-Steering-Gauge-Background"
+            d="m 1285.45,2040.96 -744.019,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.41 3.576,7.98 7.98,7.98 l 744.024,-0.02 c 4.4,0 7.98,-3.57 7.98,-7.98 l 7.35,-41.04 c 0,-4.4 -3.58,-7.98 -7.98,-7.98 z"
+            style="fill:#fff;fill-opacity:0.2" />
+          <path id="Specs-Steering-Gauge-Trail" class="trail" data-scale="0.0097" d="m 904.01,2097.96 9.193,-57 z"
+            style="fill:url(#_Linear5)" />
+          <path id="Specs-Steering-Gauge-Needle-Main" class="needle" data-scale="3.65"
+            d="m 909.526,2097.96 9.194,-57 h -11.033 l -9.193,57 z" style="fill:#fff; filter:url(#mini-glow);" />
+        </g><text x="60.30933" y="2077.8357"
+          style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
+          id="Specs-Steering-Label" transform="scale(0.98485887,1.0153739)">Steering</text>
       </g>
-      <g id="Modes" transform="translate(0.0096387,3.9732155e-4)" style="display:inline">
-        <g id="Roam-Mode" style="display:none">
-          <g id="Roam-Badges" transform="matrix(1.219398,0,0,1.219398,-842.48816,22.089281)">
-            <g id="Roam-Cylinders"
-              style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5">
-              <path id="Roam-Cylinders-Box"
-                d="m 3840,243.175 c 0,-1.329 -1.08,-2.409 -2.41,-2.409 l -266.48,0.047 c -1.33,0 -2.41,1.08 -2.41,2.41 l 0.11,399.656 c 0,1.33 1.08,2.41 2.41,2.41 l 266.37,-0.047 c 1.33,0 2.41,-1.08 2.41,-2.41 z"
-                style="fill:#fff" /><text x="3730.3013" y="608.83618"
-                style="font-stretch:condensed;font-size:90.5018px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;display:none;stroke-width:0.993139"
-                id="Roam-Cylinders-Value" transform="scale(0.99313948,1.0069079)">???</text>
-              <path
-                d="m 3689.75,369.214 c 0,0.272 1.2,3.867 2.67,8.061 3.16,8.987 7.14,22.657 9.1,31.316 5.44,24.128 6.48,42.756 3.16,56.642 l -0.82,3.594 -6.1,1.796 c -3.38,0.979 -6.21,1.852 -6.32,1.961 -0.22,0.219 9.8,34.094 10.24,34.638 0.16,0.163 3.1,-0.491 6.48,-1.526 l 6.15,-1.905 2.02,1.58 c 7.79,5.99 18.68,8.496 28.32,6.425 11.11,-2.343 20.59,-10.457 25.11,-21.459 l 1.47,-3.541 5.83,-1.742 c 3.27,-0.98 5.99,-1.906 6.15,-2.071 0.27,-0.272 -9.53,-33.659 -10.13,-34.312 -0.22,-0.219 -2.88,0.325 -5.99,1.198 -3.05,0.926 -5.99,1.689 -6.53,1.689 -2.07,0 -11.6,-11.546 -16.94,-20.533 -8.61,-14.596 -17.54,-37.579 -23.37,-59.964 l -0.6,-2.287 h -14.92 c -8.22,0.005 -14.98,0.224 -14.98,0.44 z m 54.3,86.978 c 12.75,3.813 19.55,18.9 13.89,30.935 -8.82,18.9 -35.35,17.427 -42.05,-2.396 -1.74,-5.121 -1.36,-11.437 1.04,-16.448 2.83,-5.937 7.68,-10.185 13.94,-12.147 3,-0.976 9.86,-0.923 13.18,0.056 z m -118.57,-145.14 v 65.353 h 19.61 v -1.633 c 0,-3.322 2.89,-7.407 6.53,-9.259 2.08,-1.035 3.22,-1.089 43.03,-1.089 44.17,0 43.03,-0.053 46.19,2.887 1.63,1.527 3.15,4.467 3.65,7.08 l 0.38,2.014 h 19.5 v -65.353 z m 72.11,13.667 c 8.94,2.233 11.5,13.78 4.47,19.989 -5.99,5.227 -15.63,2.452 -18.25,-5.284 -2.01,-6.099 1.97,-13.288 8.23,-14.758 2.56,-0.601 2.94,-0.601 5.55,0.053 z m -72.11,-31.1 v 7.626 h 138.89 v -7.626 z m 54.2,-30.118 c -16.56,1.252 -29.47,3.05 -43.68,5.881 -5.23,1.036 -9.75,2.071 -10.03,2.234 -0.27,0.163 -0.49,2.94 -0.49,6.263 v 5.937 h 138.94 l -0.16,-6.1 -0.16,-6.154 -5.45,-1.198 c -13.13,-2.887 -31.64,-5.555 -45.97,-6.697 -6.64,-0.491 -27.5,-0.601 -33,-0.166 z"
-                style="display:none;fill-rule:nonzero" id="Roam-Cylinders-Icon" />
-              <path
-                d="m 3694.1459,300.88718 h 46.4747 l -56.0361,125.42712 76.4538,-42.53672 -42.1416,154.06904 21.7239,-13.88599 -41.7021,60.7574 -11.7239,-69.87487 14.7666,20.39413 15.2034,-109.36302 -69.4949,38.62778 z"
-                style="clip-rule:evenodd;fill:#0a0f0c;fill-opacity:1;fill-rule:evenodd;stroke:#231f20;stroke-width:0.559752;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
-                id="Roam-Cylinders-EV" />
-            </g>
-            <g id="Roam-Rank"
-              style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5">
-              <path id="Roam-Rank-Box"
-                d="m 3468.76,243.176 c 0,-1.33 -1.08,-2.41 -2.4,-2.41 h -266.5 c -1.32,0 -2.4,1.08 -2.4,2.41 v 399.715 c 0,1.33 1.08,2.41 2.4,2.41 h 266.5 c 1.32,0 2.4,-1.08 2.4,-2.41 z"
-                style="fill:#d0d0d0" />
-              <rect id="Roam-Rank-Inner_Box" x="3210.1001" y="521.10498" width="247.159" height="110.297"
-                style="fill:#fff" /><text x="3365.7888" y="603.26526"
-                style="font-stretch:condensed;font-size:90.9066px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;stroke-width:0.990398"
-                id="Roam-Rank-Value" transform="scale(0.9903979,1.0096952)">?</text><text x="3187.0793" y="454.96506"
-                style="font-stretch:condensed;font-size:177.042px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;fill:#fff;stroke-width:0.955975"
-                id="Roam-Rank-Class" transform="scale(1.046052,0.95597542)">?</text>
-            </g>
-            <g id="Roam-Drivetrain">
-              <path id="Roam-Drivetrain-Box"
-                d="m 3097.52,243.188 c 0,-1.33 -1.08,-2.41 -2.41,-2.41 l -266.48,0.048 c -1.33,0 -2.41,1.079 -2.41,2.409 l 0.11,399.657 c 0,1.329 1.08,2.409 2.41,2.409 l 266.37,-0.047 c 1.33,0 2.41,-1.08 2.41,-2.41 z"
-                style="fill:#fff" /><text x="2982.6924" y="608.84814"
-                style="font-stretch:condensed;font-size:90.5018px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;stroke-width:0.993139"
-                id="Roam-Drivetrain-Value" transform="scale(0.99313948,1.0069079)">???</text>
-              <g id="Roam-Drivetrain-Car">
-                <path id="Roam-Drivetrain-Car-Body"
-                  d="m 2961.87,512.514 c -17.55,-0.123 -50.58,-8.075 -50.58,-21.674 0,0 -1.88,-40.414 -1.88,-50.578 0,-3.502 1.88,-2.291 1.88,-10.838 0,-16.562 -0.54,-37.409 -1.2,-57.042 -1.55,0.389 -2.91,1.106 -3.1,2.683 -1.83,0 -8.03,0.304 -8.29,0.107 -0.13,-0.095 0.83,-5.446 1.01,-5.97 0.65,-1.854 6.3,-4.653 10.05,-5.963 -0.98,-27.185 -2.08,-50.143 -2.08,-53.033 0,-2.925 -3.94,-46.965 54.19,-46.965 v 0.001 c 57.78,0.175 54.19,44.045 54.19,46.964 0,2.89 -1.1,25.848 -2.08,53.033 3.75,1.31 9.4,4.109 10.05,5.963 0.19,0.524 1.15,5.875 1.02,5.97 -0.27,0.197 -6.47,-0.107 -8.3,-0.107 -0.18,-1.577 -1.55,-2.294 -3.09,-2.683 -0.67,19.633 -1.21,40.48 -1.21,57.042 0,8.547 1.88,7.336 1.88,10.838 0,10.164 -1.88,50.578 -1.88,50.578 0,13.706 -33.13,21.676 -50.58,21.676 z m -41.51,-173.406 3.58,37.933 c 27.12,-4.829 52.42,-4.842 75.86,0 l 3.65,-37.937 c -26.5,-12.649 -54.22,-12.42 -83.09,0.004 z m 3.61,130.056 2.44,-25.289 c 25.36,2.948 49,2.956 70.92,0 l 2.51,25.289 c -24.7,4.878 -48.8,4.619 -75.87,0 z"
-                  style="fill:#ddb4da" />
-                <g id="Wheels" transform="matrix(0,-6.5820058,6.5820058,0,3094.7776,2588.8367)">
-                  <path id="Roam-Drivetrain-Car-Wheels-Rear"
-                    style="fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
-                    d="m 320.21353,-29.220439 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661459 v 1.322916 c 0,0.366448 0.29501,0.661459 0.66146,0.661459 h 2.11202 v 4.610571 h -0.29818 c -0.20189,0 -0.36432,0.295011 -0.36432,0.661458 v 2.22157 c 0,0.366448 0.16243,0.661458 0.36432,0.661458 h 0.29818 v 4.610572 h -2.11202 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661458 v 1.322917 c 0,0.366447 0.29501,0.661458 0.66146,0.661458 h 5.29167 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661458 v -1.322917 c 0,-0.366447 -0.29501,-0.661458 -0.66145,-0.661458 h -2.02004 v -4.610572 h 0.29818 c 0.20189,0 0.36432,-0.29501 0.36432,-0.661458 v -2.22157 c 0,-0.366447 -0.16243,-0.661458 -0.36432,-0.661458 h -0.29818 v -4.610571 h 2.02004 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661459 v -1.322916 c 0,-0.366448 -0.29501,-0.661459 -0.66145,-0.661459 z" />
-                  <path id="Roam-Drivetrain-Car-Wheels-Front"
-                    style="fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
-                    d="m 342.79388,-29.220439 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661459 v 1.322916 c 0,0.366448 0.29501,0.661459 0.66146,0.661459 h 2.11202 v 4.610571 h -0.29818 c -0.20189,0 -0.36432,0.295011 -0.36432,0.661458 v 2.22157 c 0,0.366448 0.16243,0.661458 0.36432,0.661458 h 0.29818 v 4.610572 h -2.11202 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661458 v 1.322917 c 0,0.366447 0.29501,0.661458 0.66146,0.661458 h 5.29167 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661458 v -1.322917 c 0,-0.366447 -0.29501,-0.661458 -0.66145,-0.661458 h -2.02004 v -4.610572 h 0.29818 c 0.20189,0 0.36432,-0.29501 0.36432,-0.661458 v -2.22157 c 0,-0.366447 -0.16243,-0.661458 -0.36432,-0.661458 h -0.29818 v -4.610571 h 2.02004 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661459 v -1.322916 c 0,-0.366448 -0.29501,-0.661459 -0.66145,-0.661459 z" />
-                  <path id="Roam-Drivetrain-Car-Wheels-Drive_Shaft"
-                    style="opacity:1;fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
-                    d="m 323.4634,-20.747316 h 21.85379 c 0.36644,0 0.66145,0.07045 0.66145,0.157959 v 0.79513 c 0,0.08751 -0.29501,0.157959 -0.66145,0.157959 H 323.4634 c -0.36645,0 -0.66146,-0.07045 -0.66146,-0.157959 v -0.79513 c 0,-0.08751 0.29501,-0.157959 0.66146,-0.157959 z" />
-                </g>
-              </g>
-            </g>
+      <g id="Specs-Brake">
+        <g id="Specs-Brake-Gauge">
+          <path id="Specs-Brake-Gauge-Background"
+            d="m 531.763,1916.98 744.017,-0.02 c 4.41,0 7.98,-3.58 7.98,-7.98 l 7.36,-41.04 c 0,-4.41 -3.58,-7.98 -7.98,-7.98 l -744.022,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
+            style="fill:#fff;fill-opacity:0.2" />
+          <path id="Specs-Brake-Gauge-Trail" class="trail" data-scale="0.0097"
+            d="m 1267.3,1916.98 9.2,-57 H 539.118 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
+            style="fill:url(#_Linear9)" />
+          <path id="Specs-Brake-Gauge-Main" class="needle" data-scale="7.3"
+            d="m 1270.99,1859.96 -9.19,57 h 11.03 l 9.2,-57 z" style="fill: #fff; filter:url(#mini-glow);" />
+        </g><text x="58.756775" y="1898.611"
+          style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
+          id="Specs-Brake-Label" transform="scale(0.98485887,1.0153739)">Brake</text>
+      </g>
+      <g id="Specs-Accelerator">
+        <g id="Specs-Accelerator-Gauge">
+          <path id="Specs-Accelerator-Gauge-Background"
+            d="m 1285.45,1678.88 -744.019,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 l 744.024,-0.02 c 4.4,0 7.98,-3.58 7.98,-7.98 l 7.35,-41.04 c 0,-4.41 -3.58,-7.98 -7.98,-7.98 z"
+            style="fill:#fff;fill-opacity:0.2" />
+          <path id="Specs-Accelerator-Gauge-Trail" class="trail" data-scale="0.00485"
+            d="m 540.691,1735.9 9.193,-57 h -8.453 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
+            style="fill:url(#_Linear13)" />
+          <path id="Specs-Accelerator-Gauge-Main" class="needle" data-scale="7.3"
+            d="m 546.22,1735.9 9.194,-57 h -11.033 l -9.193,57 z" style="fill: #fff; filter:url(#mini-glow);" />
+        </g><text x="58.756775" y="1720.2727"
+          style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
+          id="Specs-Accelerator-Label" transform="scale(0.98485887,1.0153739)">Accelerator</text>
+      </g>
+      <g id="Specs-Boost"><text x="1310.3083" y="1541.9246"
+          style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.984859"
+          id="Specs-Boost-Value" transform="scale(0.98485887,1.0153739)">?? PSI</text><text x="58.756775" y="1541.9246"
+          style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
+          id="Specs-Boost-Label" transform="scale(0.98485887,1.0153739)">Boost</text></g>
+      <g id="Specs-Torque"><text x="1310.3162" y="1363.5864"
+          style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.984859"
+          id="Specs-Torque-Value" transform="scale(0.98485887,1.0153739)">??? ft-lb</text><text x="58.645088"
+          y="1363.5864"
+          style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
+          id="Specs-Torque-Label" transform="scale(0.98485887,1.0153739)">Torque</text></g>
+      <g id="Specs-Power"><text x="1310.3132" y="1185.248"
+          style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.984859"
+          id="Specs-Power-Value" transform="scale(0.98485887,1.0153739)">???? bhp</text><text x="58.756775"
+          y="1186.1443"
+          style="font-stretch:condensed;font-size:111.167px;font-family:AmsiProCond-Bold, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
+          id="Specs-Power-Label" transform="scale(0.98485887,1.0153739)">Power</text></g>
+    </g>
+    <g id="Modes" transform="translate(0.0096387,3.9732155e-4)" style="display:inline">
+      <g id="Roam-Mode" style="display:none">
+        <g id="Roam-Badges" transform="matrix(1.219398,0,0,1.219398,-842.48816,22.089281)">
+          <g id="Roam-Cylinders"
+            style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5">
+            <path id="Roam-Cylinders-Box"
+              d="m 3840,243.175 c 0,-1.329 -1.08,-2.409 -2.41,-2.409 l -266.48,0.047 c -1.33,0 -2.41,1.08 -2.41,2.41 l 0.11,399.656 c 0,1.33 1.08,2.41 2.41,2.41 l 266.37,-0.047 c 1.33,0 2.41,-1.08 2.41,-2.41 z"
+              style="fill:#fff" /><text x="3730.3013" y="608.83618"
+              style="font-stretch:condensed;font-size:90.5018px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;display:none;stroke-width:0.993139"
+              id="Roam-Cylinders-Value" transform="scale(0.99313948,1.0069079)">???</text>
+            <path
+              d="m 3689.75,369.214 c 0,0.272 1.2,3.867 2.67,8.061 3.16,8.987 7.14,22.657 9.1,31.316 5.44,24.128 6.48,42.756 3.16,56.642 l -0.82,3.594 -6.1,1.796 c -3.38,0.979 -6.21,1.852 -6.32,1.961 -0.22,0.219 9.8,34.094 10.24,34.638 0.16,0.163 3.1,-0.491 6.48,-1.526 l 6.15,-1.905 2.02,1.58 c 7.79,5.99 18.68,8.496 28.32,6.425 11.11,-2.343 20.59,-10.457 25.11,-21.459 l 1.47,-3.541 5.83,-1.742 c 3.27,-0.98 5.99,-1.906 6.15,-2.071 0.27,-0.272 -9.53,-33.659 -10.13,-34.312 -0.22,-0.219 -2.88,0.325 -5.99,1.198 -3.05,0.926 -5.99,1.689 -6.53,1.689 -2.07,0 -11.6,-11.546 -16.94,-20.533 -8.61,-14.596 -17.54,-37.579 -23.37,-59.964 l -0.6,-2.287 h -14.92 c -8.22,0.005 -14.98,0.224 -14.98,0.44 z m 54.3,86.978 c 12.75,3.813 19.55,18.9 13.89,30.935 -8.82,18.9 -35.35,17.427 -42.05,-2.396 -1.74,-5.121 -1.36,-11.437 1.04,-16.448 2.83,-5.937 7.68,-10.185 13.94,-12.147 3,-0.976 9.86,-0.923 13.18,0.056 z m -118.57,-145.14 v 65.353 h 19.61 v -1.633 c 0,-3.322 2.89,-7.407 6.53,-9.259 2.08,-1.035 3.22,-1.089 43.03,-1.089 44.17,0 43.03,-0.053 46.19,2.887 1.63,1.527 3.15,4.467 3.65,7.08 l 0.38,2.014 h 19.5 v -65.353 z m 72.11,13.667 c 8.94,2.233 11.5,13.78 4.47,19.989 -5.99,5.227 -15.63,2.452 -18.25,-5.284 -2.01,-6.099 1.97,-13.288 8.23,-14.758 2.56,-0.601 2.94,-0.601 5.55,0.053 z m -72.11,-31.1 v 7.626 h 138.89 v -7.626 z m 54.2,-30.118 c -16.56,1.252 -29.47,3.05 -43.68,5.881 -5.23,1.036 -9.75,2.071 -10.03,2.234 -0.27,0.163 -0.49,2.94 -0.49,6.263 v 5.937 h 138.94 l -0.16,-6.1 -0.16,-6.154 -5.45,-1.198 c -13.13,-2.887 -31.64,-5.555 -45.97,-6.697 -6.64,-0.491 -27.5,-0.601 -33,-0.166 z"
+              style="display:none;fill-rule:nonzero" id="Roam-Cylinders-Icon" />
+            <path
+              d="m 3694.1459,300.88718 h 46.4747 l -56.0361,125.42712 76.4538,-42.53672 -42.1416,154.06904 21.7239,-13.88599 -41.7021,60.7574 -11.7239,-69.87487 14.7666,20.39413 15.2034,-109.36302 -69.4949,38.62778 z"
+              style="clip-rule:evenodd;fill:#0a0f0c;fill-opacity:1;fill-rule:evenodd;stroke:#231f20;stroke-width:0.559752;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+              id="Roam-Cylinders-EV" />
           </g>
-          <g id="Navigation" transform="matrix(1.0783034,0,0,1.0783034,-141.04203,0)"><text x="579.77496" y="563.17413"
-              style="font-style:italic;font-stretch:condensed;font-size:388.305px;font-family:AmsiProCond-BlackItalic, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;fill:#fff;stroke-width:0.662207"
-              id="Navigation-Direction" transform="scale(0.95737453,1.0445233)">??</text>
-            <g id="Navigation-Dial" class="rotate">
-              <path
-                d="M 573.837,0 C 329.313,0 130.791,198.522 130.791,443.046 c 0,244.523 198.522,443.046 443.046,443.046 244.524,0 443.043,-198.523 443.043,-443.046 C 1016.88,198.522 818.361,0 573.837,0 Z m 0,10.676 c 238.631,0 432.373,193.738 432.373,432.37 0,238.631 -193.742,432.37 -432.373,432.37 -238.632,0 -432.37,-193.739 -432.37,-432.37 0,-238.632 193.738,-432.37 432.37,-432.37 z"
-                style="fill:#fff" id="Navigation-Circle" /><text x="573.83551" y="100"
-                style="font-size:60.4757px;font-family:AmsiPro-Bold, Barlow, sans-serif;text-align:center;text-anchor:middle;fill:#fff;stroke-width:0.967193"
-                id="Navigation-North">N</text>
+          <g id="Roam-Rank"
+            style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5">
+            <path id="Roam-Rank-Box"
+              d="m 3468.76,243.176 c 0,-1.33 -1.08,-2.41 -2.4,-2.41 h -266.5 c -1.32,0 -2.4,1.08 -2.4,2.41 v 399.715 c 0,1.33 1.08,2.41 2.4,2.41 h 266.5 c 1.32,0 2.4,-1.08 2.4,-2.41 z"
+              style="fill:#d0d0d0" />
+            <rect id="Roam-Rank-Inner_Box" x="3210.1001" y="521.10498" width="247.159" height="110.297"
+              style="fill:#fff" /><text x="3365.7888" y="603.26526"
+              style="font-stretch:condensed;font-size:90.9066px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;stroke-width:0.990398"
+              id="Roam-Rank-Value" transform="scale(0.9903979,1.0096952)">?</text><text x="3187.0793" y="454.96506"
+              style="font-stretch:condensed;font-size:177.042px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;fill:#fff;stroke-width:0.955975"
+              id="Roam-Rank-Class" transform="scale(1.046052,0.95597542)">?</text>
+          </g>
+          <g id="Roam-Drivetrain">
+            <path id="Roam-Drivetrain-Box"
+              d="m 3097.52,243.188 c 0,-1.33 -1.08,-2.41 -2.41,-2.41 l -266.48,0.048 c -1.33,0 -2.41,1.079 -2.41,2.409 l 0.11,399.657 c 0,1.329 1.08,2.409 2.41,2.409 l 266.37,-0.047 c 1.33,0 2.41,-1.08 2.41,-2.41 z"
+              style="fill:#fff" /><text x="2982.6924" y="608.84814"
+              style="font-stretch:condensed;font-size:90.5018px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;stroke-width:0.993139"
+              id="Roam-Drivetrain-Value" transform="scale(0.99313948,1.0069079)">???</text>
+            <g id="Roam-Drivetrain-Car">
+              <path id="Roam-Drivetrain-Car-Body"
+                d="m 2961.87,512.514 c -17.55,-0.123 -50.58,-8.075 -50.58,-21.674 0,0 -1.88,-40.414 -1.88,-50.578 0,-3.502 1.88,-2.291 1.88,-10.838 0,-16.562 -0.54,-37.409 -1.2,-57.042 -1.55,0.389 -2.91,1.106 -3.1,2.683 -1.83,0 -8.03,0.304 -8.29,0.107 -0.13,-0.095 0.83,-5.446 1.01,-5.97 0.65,-1.854 6.3,-4.653 10.05,-5.963 -0.98,-27.185 -2.08,-50.143 -2.08,-53.033 0,-2.925 -3.94,-46.965 54.19,-46.965 v 0.001 c 57.78,0.175 54.19,44.045 54.19,46.964 0,2.89 -1.1,25.848 -2.08,53.033 3.75,1.31 9.4,4.109 10.05,5.963 0.19,0.524 1.15,5.875 1.02,5.97 -0.27,0.197 -6.47,-0.107 -8.3,-0.107 -0.18,-1.577 -1.55,-2.294 -3.09,-2.683 -0.67,19.633 -1.21,40.48 -1.21,57.042 0,8.547 1.88,7.336 1.88,10.838 0,10.164 -1.88,50.578 -1.88,50.578 0,13.706 -33.13,21.676 -50.58,21.676 z m -41.51,-173.406 3.58,37.933 c 27.12,-4.829 52.42,-4.842 75.86,0 l 3.65,-37.937 c -26.5,-12.649 -54.22,-12.42 -83.09,0.004 z m 3.61,130.056 2.44,-25.289 c 25.36,2.948 49,2.956 70.92,0 l 2.51,25.289 c -24.7,4.878 -48.8,4.619 -75.87,0 z"
+                style="fill:#ddb4da" />
+              <g id="Wheels" transform="matrix(0,-6.5820058,6.5820058,0,3094.7776,2588.8367)">
+                <path id="Roam-Drivetrain-Car-Wheels-Rear" style="fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
+                  d="m 320.21353,-29.220439 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661459 v 1.322916 c 0,0.366448 0.29501,0.661459 0.66146,0.661459 h 2.11202 v 4.610571 h -0.29818 c -0.20189,0 -0.36432,0.295011 -0.36432,0.661458 v 2.22157 c 0,0.366448 0.16243,0.661458 0.36432,0.661458 h 0.29818 v 4.610572 h -2.11202 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661458 v 1.322917 c 0,0.366447 0.29501,0.661458 0.66146,0.661458 h 5.29167 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661458 v -1.322917 c 0,-0.366447 -0.29501,-0.661458 -0.66145,-0.661458 h -2.02004 v -4.610572 h 0.29818 c 0.20189,0 0.36432,-0.29501 0.36432,-0.661458 v -2.22157 c 0,-0.366447 -0.16243,-0.661458 -0.36432,-0.661458 h -0.29818 v -4.610571 h 2.02004 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661459 v -1.322916 c 0,-0.366448 -0.29501,-0.661459 -0.66145,-0.661459 z" />
+                <path id="Roam-Drivetrain-Car-Wheels-Front" style="fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
+                  d="m 342.79388,-29.220439 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661459 v 1.322916 c 0,0.366448 0.29501,0.661459 0.66146,0.661459 h 2.11202 v 4.610571 h -0.29818 c -0.20189,0 -0.36432,0.295011 -0.36432,0.661458 v 2.22157 c 0,0.366448 0.16243,0.661458 0.36432,0.661458 h 0.29818 v 4.610572 h -2.11202 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661458 v 1.322917 c 0,0.366447 0.29501,0.661458 0.66146,0.661458 h 5.29167 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661458 v -1.322917 c 0,-0.366447 -0.29501,-0.661458 -0.66145,-0.661458 h -2.02004 v -4.610572 h 0.29818 c 0.20189,0 0.36432,-0.29501 0.36432,-0.661458 v -2.22157 c 0,-0.366447 -0.16243,-0.661458 -0.36432,-0.661458 h -0.29818 v -4.610571 h 2.02004 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661459 v -1.322916 c 0,-0.366448 -0.29501,-0.661459 -0.66145,-0.661459 z" />
+                <path id="Roam-Drivetrain-Car-Wheels-Drive_Shaft"
+                  style="opacity:1;fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
+                  d="m 323.4634,-20.747316 h 21.85379 c 0.36644,0 0.66145,0.07045 0.66145,0.157959 v 0.79513 c 0,0.08751 -0.29501,0.157959 -0.66145,0.157959 H 323.4634 c -0.36645,0 -0.66146,-0.07045 -0.66146,-0.157959 v -0.79513 c 0,-0.08751 0.29501,-0.157959 0.66146,-0.157959 z" />
+              </g>
             </g>
           </g>
         </g>
-        <g id="Race-Mode" style="display:inline">
-          <g id="Race-Badges" transform="translate(-0.0096387,-17.628856)">
-            <g id="Race-Rank">
-              <g id="Race-Rank-Box">
-                <path id="Race-Rank-Box-Colour"
-                  d="m 3840,772.622 c 0,-1.344 -1.09,-2.435 -2.43,-2.435 h -434 c -1.34,0 -2.43,1.091 -2.43,2.435 v 167.031 c 0,1.343 1.09,2.434 2.43,2.434 h 434 c 1.34,0 2.43,-1.091 2.43,-2.434 z"
-                  style="display:inline;fill:#d0d0d0" />
-                <path id="Race-Rank-Box-Edge"
-                  d="m 3836.29,770.187 c 0,0 -431.56,0 -431.56,0 -1.98,0 -3.59,1.611 -3.59,3.595 0,0 0,164.597 0,164.597 0,1.984 1.61,3.595 3.59,3.595 h 431.56 c 1.99,0 3.6,-1.611 3.6,-3.595 V 773.782 c 0,-1.984 -1.61,-3.595 -3.6,-3.595 z M 3570.6,939.653 h -165.87 c -0.7,0 -1.27,-0.571 -1.27,-1.274 V 773.782 c 0,-0.702 0.57,-1.273 1.27,-1.273 0,0 165.87,0 165.87,0 z m 2.32,0 V 772.509 c 0,0 263.37,0 263.37,0 0.7,0 1.28,0.571 1.28,1.273 v 164.597 c 0,0.703 -0.58,1.274 -1.28,1.274 z"
-                  style="display:inline;fill:#fff;fill-opacity:0.16" />
-              </g>
-              <rect id="Race-Rank-Inner_Box" x="3579.8899" y="779.47302" width="250.716" height="153.215"
-                style="fill:#fff" /><text x="3726.3767" y="896.43402"
-                style="font-stretch:condensed;font-size:130.809px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;stroke-width:0.993133;text-align:center;text-anchor:middle;"
-                id="Race-Rank-Value" transform="scale(0.9931334,1.0069141)">?</text><text x="3506.4307" y="896.43402"
-                style="font-stretch:condensed;font-size:130.809px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;fill:#fff;stroke-width:0.993133;text-align:center;text-anchor:middle;"
-                id="Race-Rank-Class" transform="scale(0.99313343,1.0069141)">?</text>
-            </g>
-            <g id="Race-Drivetrain"
-              style="clip-rule:evenodd;display:inline;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5">
-              <path id="Race-Drivetrain-Box"
-                d="m 3325.67,769.489 c 0,-1.331 -1.08,-2.412 -2.42,-2.412 l -625.55,0.112 c -1.33,0 -2.41,1.081 -2.41,2.412 l 0.12,170.074 c 0,1.331 1.08,2.412 2.41,2.412 l 625.43,-0.112 c 1.34,0 2.42,-1.081 2.42,-2.412 z"
-                style="fill:#fff" /><text x="2859.2627" y="894.45966"
-                style="font-stretch:condensed;font-size:129.59px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;stroke-width:0.993133"
-                id="Race-Drivetrain-Value" transform="scale(0.99313343,1.0069141)">???</text>
-              <g id="Race-Drivetrain-Car"
-                style="clip-rule:evenodd;display:inline;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
-                transform="matrix(0,1.2905537,-1.2905537,0,3646.8867,-2968.9475)">
-                <path id="Race-Drivetrain-Car-Body"
-                  d="m 2961.87,512.514 c -17.55,-0.123 -50.58,-8.075 -50.58,-21.674 0,0 -1.88,-40.414 -1.88,-50.578 0,-3.502 1.88,-2.291 1.88,-10.838 0,-16.562 -0.54,-37.409 -1.2,-57.042 -1.55,0.389 -2.91,1.106 -3.1,2.683 -1.83,0 -8.03,0.304 -8.29,0.107 -0.13,-0.095 0.83,-5.446 1.01,-5.97 0.65,-1.854 6.3,-4.653 10.05,-5.963 -0.98,-27.185 -2.08,-50.143 -2.08,-53.033 0,-2.925 -3.94,-46.965 54.19,-46.965 v 0.001 c 57.78,0.175 54.19,44.045 54.19,46.964 0,2.89 -1.1,25.848 -2.08,53.033 3.75,1.31 9.4,4.109 10.05,5.963 0.19,0.524 1.15,5.875 1.02,5.97 -0.27,0.197 -6.47,-0.107 -8.3,-0.107 -0.18,-1.577 -1.55,-2.294 -3.09,-2.683 -0.67,19.633 -1.21,40.48 -1.21,57.042 0,8.547 1.88,7.336 1.88,10.838 0,10.164 -1.88,50.578 -1.88,50.578 0,13.706 -33.13,21.676 -50.58,21.676 z m -41.51,-173.406 3.58,37.933 c 27.12,-4.829 52.42,-4.842 75.86,0 l 3.65,-37.937 c -26.5,-12.649 -54.22,-12.42 -83.09,0.004 z m 3.61,130.056 2.44,-25.289 c 25.36,2.948 49,2.956 70.92,0 l 2.51,25.289 c -24.7,4.878 -48.8,4.619 -75.87,0 z"
-                  style="fill:#ddb4da;fill-opacity:1" />
-                <g id="Race-Drivetrain-Car-Wheels" transform="matrix(0,-6.5820058,6.5820058,0,3094.7776,2588.8367)">
-                  <path id="Race-Drivetrain-Car-Wheels-Rear"
-                    style="fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
-                    d="m 320.21353,-29.220439 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661459 v 1.322916 c 0,0.366448 0.29501,0.661459 0.66146,0.661459 h 2.11202 v 4.610571 h -0.29818 c -0.20189,0 -0.36432,0.295011 -0.36432,0.661458 v 2.22157 c 0,0.366448 0.16243,0.661458 0.36432,0.661458 h 0.29818 v 4.610572 h -2.11202 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661458 v 1.322917 c 0,0.366447 0.29501,0.661458 0.66146,0.661458 h 5.29167 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661458 v -1.322917 c 0,-0.366447 -0.29501,-0.661458 -0.66145,-0.661458 h -2.02004 v -4.610572 h 0.29818 c 0.20189,0 0.36432,-0.29501 0.36432,-0.661458 v -2.22157 c 0,-0.366447 -0.16243,-0.661458 -0.36432,-0.661458 h -0.29818 v -4.610571 h 2.02004 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661459 v -1.322916 c 0,-0.366448 -0.29501,-0.661459 -0.66145,-0.661459 z" />
-                  <path id="Race-Drivetrain-Car-Wheels-Front"
-                    style="fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
-                    d="m 342.79388,-29.220439 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661459 v 1.322916 c 0,0.366448 0.29501,0.661459 0.66146,0.661459 h 2.11202 v 4.610571 h -0.29818 c -0.20189,0 -0.36432,0.295011 -0.36432,0.661458 v 2.22157 c 0,0.366448 0.16243,0.661458 0.36432,0.661458 h 0.29818 v 4.610572 h -2.11202 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661458 v 1.322917 c 0,0.366447 0.29501,0.661458 0.66146,0.661458 h 5.29167 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661458 v -1.322917 c 0,-0.366447 -0.29501,-0.661458 -0.66145,-0.661458 h -2.02004 v -4.610572 h 0.29818 c 0.20189,0 0.36432,-0.29501 0.36432,-0.661458 v -2.22157 c 0,-0.366447 -0.16243,-0.661458 -0.36432,-0.661458 h -0.29818 v -4.610571 h 2.02004 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661459 v -1.322916 c 0,-0.366448 -0.29501,-0.661459 -0.66145,-0.661459 z" />
-                  <path id="Race-Drivetrain-Car-Wheels-Drive_Shaft"
-                    style="opacity:1;fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
-                    d="m 323.4634,-20.747316 h 21.85379 c 0.36644,0 0.66145,0.07045 0.66145,0.157959 v 0.79513 c 0,0.08751 -0.29501,0.157959 -0.66145,0.157959 H 323.4634 c -0.36645,0 -0.66146,-0.07045 -0.66146,-0.157959 v -0.79513 c 0,-0.08751 0.29501,-0.157959 0.66146,-0.157959 z" />
-                </g>
-              </g>
-            </g>
-          </g>
-          <g id="Race-Progess" transform="translate(-0.00956172)">
-            <g id="Race-Position"><text x="3917.8103" y="275.65787"
-                style="font-style:italic;font-stretch:condensed;font-size:386.076px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.977923"
-                id="Race-Position-Value" transform="scale(0.9779228,1.0225756)">??</text><text x="3064.6025"
-                y="119.25899"
-                style="font-style:italic;font-stretch:condensed;font-size:167.029px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;fill:#fff;stroke-width:0.962317"
-                id="Race-Position-Label" transform="scale(0.962317,1.0391586)">POSITION</text></g>
-            <g id="Race-Time">
-              <path id="Race-Time-Box"
-                d="m 3830.84,404.955 c 0,-8.758 -7.11,-15.867 -15.87,-15.867 H 2711.22 c -8.76,0 -15.87,7.109 -15.87,15.867 v 126.936 c 0,8.758 7.11,15.868 15.87,15.868 h 1103.75 c 8.76,0 15.87,-7.11 15.87,-15.868 z"
-                style="fill:#8a758f;stroke:#00fff5;stroke-width:3px;stroke-opacity:0.05" /><text x="4112.6572"
-                y="468.9035"
-                style="font-style:italic;font-stretch:condensed;font-size:103.77px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.920831"
-                id="Race-Time-Value" transform="scale(0.9208306,1.0859761)">00:00.000</text><text x="2803.0029"
-                y="495.16852"
-                style="font-style:italic;font-stretch:condensed;font-size:109.826px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;clip-rule:evenodd;display:inline;fill:#fff;fill-rule:evenodd;stroke-width:0.974567;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
-                id="Race-Time-Label" transform="scale(0.97456657,1.0260972)">TIME</text>
-            </g>
-          </g>
-          <g id="Lap">
-            <g id="Lap-Times">
-              <g id="Lap-Times-Last">
-                <path id="Lap-Times-Last-Box"
-                  d="m 1145.19,743.101 c 0,-8.769 -7.12,-15.888 -15.89,-15.888 H 24.105 c -8.769,0 -15.888,7.119 -15.888,15.888 v 127.103 c 0,8.768 7.119,15.888 15.888,15.888 H 1129.3 c 8.77,0 15.89,-7.12 15.89,-15.888 z"
-                  style="fill:#8a758f;stroke:#00fff5;stroke-width:3px;stroke-opacity:0.05" /><text x="50.891899"
-                  y="825.94519"
-                  style="font-style:italic;font-stretch:condensed;font-size:109.97px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;fill:#fff;stroke-width:0.974567"
-                  id="Lap-Times-Last-Label" transform="scale(0.97456657,1.0260972)">LAST</text><text x="1198.7461"
-                  y="780.40393"
-                  style="font-style:italic;font-stretch:condensed;font-size:103.907px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.920831"
-                  id="Lap-Times-Last-Value" transform="scale(0.9208306,1.0859761)">00:00.000</text>
-              </g>
-              <g id="Lap-Times-Best">
-                <path id="Lap-Times-Best-Box"
-                  d="m 1147.67,574.293 c 0,-8.769 -7.11,-15.888 -15.88,-15.888 H 26.588 c -8.769,0 -15.888,7.119 -15.888,15.888 v 127.102 c 0,8.769 7.119,15.888 15.888,15.888 H 1131.79 c 8.77,0 15.88,-7.119 15.88,-15.888 z"
-                  style="fill:#8a758f;stroke:#00fff5;stroke-width:3px;stroke-opacity:0.05" /><text x="1198.7461"
-                  y="624.96039"
-                  style="font-style:italic;font-stretch:condensed;font-size:103.907px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;display:inline;fill:#fff;stroke-width:0.920831"
-                  id="Lap-Times-Best-Value" transform="scale(0.9208306,1.0859761)">00:00.000</text><text x="50.891899"
-                  y="661.43054"
-                  style="font-style:italic;font-stretch:condensed;font-size:109.97px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;clip-rule:evenodd;display:inline;fill:#fff;fill-rule:evenodd;stroke-width:0.974567;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
-                  id="Lap-Times-Best-Label" transform="scale(0.97456657,1.0260972)">BEST</text>
-              </g>
-              <g id="Lap-Times-Current">
-                <path id="Lap-Times-Current-Box"
-                  d="m 1147.67,405.484 c 0,-8.769 -7.11,-15.888 -15.88,-15.888 H 26.588 c -8.769,0 -15.888,7.119 -15.888,15.888 v 127.103 c 0,8.769 7.119,15.888 15.888,15.888 H 1131.79 c 8.77,0 15.88,-7.119 15.88,-15.888 z"
-                  style="fill:#8a758f;stroke:#00fff5;stroke-width:3px;stroke-opacity:0.05" /><text x="1198.7461"
-                  y="469.51678"
-                  style="font-style:italic;font-stretch:condensed;font-size:103.907px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.920831"
-                  id="Lap-Times-Current-Value" transform="scale(0.9208306,1.0859761)">00:00.000</text><text
-                  x="48.345074" y="495.81561"
-                  style="font-style:italic;font-stretch:condensed;font-size:109.97px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;clip-rule:evenodd;display:inline;fill:#fff;fill-rule:evenodd;stroke-width:0.974567;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
-                  id="Lap-Times-Current-Label" transform="scale(0.97456657,1.0260972)">CURRENT</text>
-              </g>
-            </g>
-            <g id="Lap-Counter"><text x="-30.408228" y="276.03632"
-                style="font-style:italic;font-stretch:condensed;font-size:386.606px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;fill:#fff;stroke-width:0.977923"
-                id="Lap-Counter-Value" transform="scale(0.9779228,1.0225756)">??</text><text x="343.87454" y="119.42258"
-                style="font-style:italic;font-stretch:condensed;font-size:167.259px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;fill:#fff;stroke-width:0.962317"
-                id="Lap-Counter-Label" transform="scale(0.962317,1.0391586)">LAP</text></g>
+        <g id="Navigation" transform="matrix(1.0783034,0,0,1.0783034,-141.04203,0)"><text x="579.77496" y="563.17413"
+            style="font-style:italic;font-stretch:condensed;font-size:388.305px;font-family:AmsiProCond-BlackItalic, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;fill:#fff;stroke-width:0.662207"
+            id="Navigation-Direction" transform="scale(0.95737453,1.0445233)">??</text>
+          <g id="Navigation-Dial" class="rotate">
+            <path
+              d="M 573.837,0 C 329.313,0 130.791,198.522 130.791,443.046 c 0,244.523 198.522,443.046 443.046,443.046 244.524,0 443.043,-198.523 443.043,-443.046 C 1016.88,198.522 818.361,0 573.837,0 Z m 0,10.676 c 238.631,0 432.373,193.738 432.373,432.37 0,238.631 -193.742,432.37 -432.373,432.37 -238.632,0 -432.37,-193.739 -432.37,-432.37 0,-238.632 193.738,-432.37 432.37,-432.37 z"
+              style="fill:#fff" id="Navigation-Circle" /><text x="573.83551" y="100"
+              style="font-size:60.4757px;font-family:AmsiPro-Bold, Barlow, sans-serif;text-align:center;text-anchor:middle;fill:#fff;stroke-width:0.967193"
+              id="Navigation-North">N</text>
           </g>
         </g>
       </g>
-      <g id="Roll">
-        <g id="Roll-Level" class="rotate">
-          <ellipse id="Roll-Level-Bounding_Circle" cx="1844.4611" cy="605.02234"
-            style="display:none;fill:#fe1c00;stroke-width:1.05436" rx="604.99701" ry="605.02228" />
-          <g id="Roll-Level-Indicator">
-            <path id="Roll-Level-Indicator-Lower"
-              d="M 2441.6767,597.43606 1912.5475,597.241 c -2.309,-10e-4 -4.5022,1.02485 -5.9783,2.80043 l -62.1134,74.53084 c 0,0 -62.1029,-74.53084 -62.1029,-74.53084 -1.4867,-1.77558 -3.6798,-2.80149 -5.9889,-2.80043 l -529.1292,0.19506 c -4.2913,10e-4 -7.7813,3.48894 -7.7707,7.78447 0,4.29449 3.49,7.77921 7.7813,7.77815 l 525.481,-0.19295 c 0,0 65.7511,78.90229 65.7511,78.90229 1.4761,1.77452 3.6692,2.79938 5.9783,2.79938 2.3091,0 4.5022,-1.02486 5.9783,-2.79938 l 65.751,-78.90229 c 0,0 525.4916,0.19295 525.4916,0.19295 4.2914,10e-4 7.7814,-3.48366 7.7814,-7.77815 0,-4.29553 -3.49,-7.78342 -7.7814,-7.78447 z"
-              style="display:inline;fill:#fff;stroke-width:1.05438" />
-            <path id="Roll-Level-Indicator-Upper"
-              d="m 1994.6414,436.32286 h -300.3713 c -3.2158,0 -5.8307,2.61486 -5.8307,5.83598 0,3.22007 2.6149,5.83599 5.8307,5.83599 h 300.3713 c 3.2264,0 5.8413,-2.61592 5.8413,-5.83599 0,-3.22112 -2.6149,-5.83598 -5.8413,-5.83598 z"
-              style="fill:#fff;fill-opacity:0.5;stroke-width:1.05438" />
+      <g id="Race-Mode" style="display:inline">
+        <g id="Race-Badges" transform="translate(-0.0096387,-17.628856)">
+          <g id="Race-Rank">
+            <g id="Race-Rank-Box">
+              <path id="Race-Rank-Box-Colour"
+                d="m 3840,772.622 c 0,-1.344 -1.09,-2.435 -2.43,-2.435 h -434 c -1.34,0 -2.43,1.091 -2.43,2.435 v 167.031 c 0,1.343 1.09,2.434 2.43,2.434 h 434 c 1.34,0 2.43,-1.091 2.43,-2.434 z"
+                style="display:inline;fill:#d0d0d0" />
+              <path id="Race-Rank-Box-Edge"
+                d="m 3836.29,770.187 c 0,0 -431.56,0 -431.56,0 -1.98,0 -3.59,1.611 -3.59,3.595 0,0 0,164.597 0,164.597 0,1.984 1.61,3.595 3.59,3.595 h 431.56 c 1.99,0 3.6,-1.611 3.6,-3.595 V 773.782 c 0,-1.984 -1.61,-3.595 -3.6,-3.595 z M 3570.6,939.653 h -165.87 c -0.7,0 -1.27,-0.571 -1.27,-1.274 V 773.782 c 0,-0.702 0.57,-1.273 1.27,-1.273 0,0 165.87,0 165.87,0 z m 2.32,0 V 772.509 c 0,0 263.37,0 263.37,0 0.7,0 1.28,0.571 1.28,1.273 v 164.597 c 0,0.703 -0.58,1.274 -1.28,1.274 z"
+                style="display:inline;fill:#fff;fill-opacity:0.16" />
+            </g>
+            <rect id="Race-Rank-Inner_Box" x="3579.8899" y="779.47302" width="250.716" height="153.215"
+              style="fill:#fff" /><text x="3726.3767" y="896.43402"
+              style="font-stretch:condensed;font-size:130.809px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;stroke-width:0.993133;text-align:center;text-anchor:middle;"
+              id="Race-Rank-Value" transform="scale(0.9931334,1.0069141)">?</text><text x="3506.4307" y="896.43402"
+              style="font-stretch:condensed;font-size:130.809px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;fill:#fff;stroke-width:0.993133;text-align:center;text-anchor:middle;"
+              id="Race-Rank-Class" transform="scale(0.99313343,1.0069141)">?</text>
+          </g>
+          <g id="Race-Drivetrain"
+            style="clip-rule:evenodd;display:inline;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5">
+            <path id="Race-Drivetrain-Box"
+              d="m 3325.67,769.489 c 0,-1.331 -1.08,-2.412 -2.42,-2.412 l -625.55,0.112 c -1.33,0 -2.41,1.081 -2.41,2.412 l 0.12,170.074 c 0,1.331 1.08,2.412 2.41,2.412 l 625.43,-0.112 c 1.34,0 2.42,-1.081 2.42,-2.412 z"
+              style="fill:#fff" /><text x="2859.2627" y="894.45966"
+              style="font-stretch:condensed;font-size:129.59px;font-family:AmsiProCond-Black, Barlow Condensed, sans-serif;text-align:center;text-anchor:middle;stroke-width:0.993133"
+              id="Race-Drivetrain-Value" transform="scale(0.99313343,1.0069141)">???</text>
+            <g id="Race-Drivetrain-Car"
+              style="clip-rule:evenodd;display:inline;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+              transform="matrix(0,1.2905537,-1.2905537,0,3646.8867,-2968.9475)">
+              <path id="Race-Drivetrain-Car-Body"
+                d="m 2961.87,512.514 c -17.55,-0.123 -50.58,-8.075 -50.58,-21.674 0,0 -1.88,-40.414 -1.88,-50.578 0,-3.502 1.88,-2.291 1.88,-10.838 0,-16.562 -0.54,-37.409 -1.2,-57.042 -1.55,0.389 -2.91,1.106 -3.1,2.683 -1.83,0 -8.03,0.304 -8.29,0.107 -0.13,-0.095 0.83,-5.446 1.01,-5.97 0.65,-1.854 6.3,-4.653 10.05,-5.963 -0.98,-27.185 -2.08,-50.143 -2.08,-53.033 0,-2.925 -3.94,-46.965 54.19,-46.965 v 0.001 c 57.78,0.175 54.19,44.045 54.19,46.964 0,2.89 -1.1,25.848 -2.08,53.033 3.75,1.31 9.4,4.109 10.05,5.963 0.19,0.524 1.15,5.875 1.02,5.97 -0.27,0.197 -6.47,-0.107 -8.3,-0.107 -0.18,-1.577 -1.55,-2.294 -3.09,-2.683 -0.67,19.633 -1.21,40.48 -1.21,57.042 0,8.547 1.88,7.336 1.88,10.838 0,10.164 -1.88,50.578 -1.88,50.578 0,13.706 -33.13,21.676 -50.58,21.676 z m -41.51,-173.406 3.58,37.933 c 27.12,-4.829 52.42,-4.842 75.86,0 l 3.65,-37.937 c -26.5,-12.649 -54.22,-12.42 -83.09,0.004 z m 3.61,130.056 2.44,-25.289 c 25.36,2.948 49,2.956 70.92,0 l 2.51,25.289 c -24.7,4.878 -48.8,4.619 -75.87,0 z"
+                style="fill:#ddb4da;fill-opacity:1" />
+              <g id="Race-Drivetrain-Car-Wheels" transform="matrix(0,-6.5820058,6.5820058,0,3094.7776,2588.8367)">
+                <path id="Race-Drivetrain-Car-Wheels-Rear" style="fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
+                  d="m 320.21353,-29.220439 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661459 v 1.322916 c 0,0.366448 0.29501,0.661459 0.66146,0.661459 h 2.11202 v 4.610571 h -0.29818 c -0.20189,0 -0.36432,0.295011 -0.36432,0.661458 v 2.22157 c 0,0.366448 0.16243,0.661458 0.36432,0.661458 h 0.29818 v 4.610572 h -2.11202 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661458 v 1.322917 c 0,0.366447 0.29501,0.661458 0.66146,0.661458 h 5.29167 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661458 v -1.322917 c 0,-0.366447 -0.29501,-0.661458 -0.66145,-0.661458 h -2.02004 v -4.610572 h 0.29818 c 0.20189,0 0.36432,-0.29501 0.36432,-0.661458 v -2.22157 c 0,-0.366447 -0.16243,-0.661458 -0.36432,-0.661458 h -0.29818 v -4.610571 h 2.02004 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661459 v -1.322916 c 0,-0.366448 -0.29501,-0.661459 -0.66145,-0.661459 z" />
+                <path id="Race-Drivetrain-Car-Wheels-Front" style="fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
+                  d="m 342.79388,-29.220439 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661459 v 1.322916 c 0,0.366448 0.29501,0.661459 0.66146,0.661459 h 2.11202 v 4.610571 h -0.29818 c -0.20189,0 -0.36432,0.295011 -0.36432,0.661458 v 2.22157 c 0,0.366448 0.16243,0.661458 0.36432,0.661458 h 0.29818 v 4.610572 h -2.11202 c -0.36645,0 -0.66146,0.295011 -0.66146,0.661458 v 1.322917 c 0,0.366447 0.29501,0.661458 0.66146,0.661458 h 5.29167 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661458 v -1.322917 c 0,-0.366447 -0.29501,-0.661458 -0.66145,-0.661458 h -2.02004 v -4.610572 h 0.29818 c 0.20189,0 0.36432,-0.29501 0.36432,-0.661458 v -2.22157 c 0,-0.366447 -0.16243,-0.661458 -0.36432,-0.661458 h -0.29818 v -4.610571 h 2.02004 c 0.36644,0 0.66145,-0.295011 0.66145,-0.661459 v -1.322916 c 0,-0.366448 -0.29501,-0.661459 -0.66145,-0.661459 z" />
+                <path id="Race-Drivetrain-Car-Wheels-Drive_Shaft"
+                  style="opacity:1;fill:#000000;stroke-width:3.96875;stroke-opacity:0.2"
+                  d="m 323.4634,-20.747316 h 21.85379 c 0.36644,0 0.66145,0.07045 0.66145,0.157959 v 0.79513 c 0,0.08751 -0.29501,0.157959 -0.66145,0.157959 H 323.4634 c -0.36645,0 -0.66146,-0.07045 -0.66146,-0.157959 v -0.79513 c 0,-0.08751 0.29501,-0.157959 0.66146,-0.157959 z" />
+              </g>
+            </g>
           </g>
         </g>
-        <path id="Roll-Horizon"
-          d="m 2311.2923,593.35087 h -287.8769 c -6.4528,0 -11.672,5.2255 -11.672,11.67091 0,92.32558 -74.9557,167.28134 -167.2876,167.28134 -92.3214,0 -167.2771,-74.95576 -167.2771,-167.28134 0,-6.44541 -5.2298,-11.67091 -11.672,-11.67091 h -287.8769 c -6.4423,0 -11.672,5.22971 -11.672,11.67091 0,6.4412 5.2297,11.67092 11.672,11.67092 h 276.5634 c 6.031,99.78109 88.979,178.95224 190.2626,178.95224 101.2941,0 184.2315,-79.17115 190.2731,-178.95224 0,0 276.5634,0 276.5634,0 6.4423,0 11.672,-5.22972 11.672,-11.67092 0,-6.4412 -5.2297,-11.67091 -11.672,-11.67091 z m -466.8365,-4.80269 c 9.0993,0 16.4799,7.3817 16.4799,16.4736 0,9.09296 -7.3806,16.47466 -16.4799,16.47466 -9.0888,0 -16.4694,-7.3817 -16.4694,-16.47466 0,-9.0919 7.3806,-16.4736 16.4694,-16.4736 z"
-          style="display:inline;fill:#fef600;stroke-width:1.05438" />
+        <g id="Race-Progess" transform="translate(-0.00956172)">
+          <g id="Race-Position"><text x="3917.8103" y="275.65787"
+              style="font-style:italic;font-stretch:condensed;font-size:386.076px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.977923"
+              id="Race-Position-Value" transform="scale(0.9779228,1.0225756)">??</text><text x="3064.6025" y="119.25899"
+              style="font-style:italic;font-stretch:condensed;font-size:167.029px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;fill:#fff;stroke-width:0.962317"
+              id="Race-Position-Label" transform="scale(0.962317,1.0391586)">POSITION</text></g>
+          <g id="Race-Time">
+            <path id="Race-Time-Box"
+              d="m 3830.84,404.955 c 0,-8.758 -7.11,-15.867 -15.87,-15.867 H 2711.22 c -8.76,0 -15.87,7.109 -15.87,15.867 v 126.936 c 0,8.758 7.11,15.868 15.87,15.868 h 1103.75 c 8.76,0 15.87,-7.11 15.87,-15.868 z"
+              style="fill:#8a758f;stroke:#00fff5;stroke-width:3px;stroke-opacity:0.05" /><text x="4112.6572"
+              y="468.9035"
+              style="font-style:italic;font-stretch:condensed;font-size:103.77px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.920831"
+              id="Race-Time-Value" transform="scale(0.9208306,1.0859761)">00:00.000</text><text x="2803.0029"
+              y="495.16852"
+              style="font-style:italic;font-stretch:condensed;font-size:109.826px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;clip-rule:evenodd;display:inline;fill:#fff;fill-rule:evenodd;stroke-width:0.974567;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+              id="Race-Time-Label" transform="scale(0.97456657,1.0260972)">TIME</text>
+          </g>
+        </g>
+        <g id="Lap">
+          <g id="Lap-Times">
+            <g id="Lap-Times-Last">
+              <path id="Lap-Times-Last-Box"
+                d="m 1145.19,743.101 c 0,-8.769 -7.12,-15.888 -15.89,-15.888 H 24.105 c -8.769,0 -15.888,7.119 -15.888,15.888 v 127.103 c 0,8.768 7.119,15.888 15.888,15.888 H 1129.3 c 8.77,0 15.89,-7.12 15.89,-15.888 z"
+                style="fill:#8a758f;stroke:#00fff5;stroke-width:3px;stroke-opacity:0.05" /><text x="50.891899"
+                y="825.94519"
+                style="font-style:italic;font-stretch:condensed;font-size:109.97px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;fill:#fff;stroke-width:0.974567"
+                id="Lap-Times-Last-Label" transform="scale(0.97456657,1.0260972)">LAST</text><text x="1198.7461"
+                y="780.40393"
+                style="font-style:italic;font-stretch:condensed;font-size:103.907px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.920831"
+                id="Lap-Times-Last-Value" transform="scale(0.9208306,1.0859761)">00:00.000</text>
+            </g>
+            <g id="Lap-Times-Best">
+              <path id="Lap-Times-Best-Box"
+                d="m 1147.67,574.293 c 0,-8.769 -7.11,-15.888 -15.88,-15.888 H 26.588 c -8.769,0 -15.888,7.119 -15.888,15.888 v 127.102 c 0,8.769 7.119,15.888 15.888,15.888 H 1131.79 c 8.77,0 15.88,-7.119 15.88,-15.888 z"
+                style="fill:#8a758f;stroke:#00fff5;stroke-width:3px;stroke-opacity:0.05" /><text x="1198.7461"
+                y="624.96039"
+                style="font-style:italic;font-stretch:condensed;font-size:103.907px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;display:inline;fill:#fff;stroke-width:0.920831"
+                id="Lap-Times-Best-Value" transform="scale(0.9208306,1.0859761)">00:00.000</text><text x="50.891899"
+                y="661.43054"
+                style="font-style:italic;font-stretch:condensed;font-size:109.97px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;clip-rule:evenodd;display:inline;fill:#fff;fill-rule:evenodd;stroke-width:0.974567;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+                id="Lap-Times-Best-Label" transform="scale(0.97456657,1.0260972)">BEST</text>
+            </g>
+            <g id="Lap-Times-Current">
+              <path id="Lap-Times-Current-Box"
+                d="m 1147.67,405.484 c 0,-8.769 -7.11,-15.888 -15.88,-15.888 H 26.588 c -8.769,0 -15.888,7.119 -15.888,15.888 v 127.103 c 0,8.769 7.119,15.888 15.888,15.888 H 1131.79 c 8.77,0 15.88,-7.119 15.88,-15.888 z"
+                style="fill:#8a758f;stroke:#00fff5;stroke-width:3px;stroke-opacity:0.05" /><text x="1198.7461"
+                y="469.51678"
+                style="font-style:italic;font-stretch:condensed;font-size:103.907px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;text-align:end;text-anchor:end;fill:#fff;stroke-width:0.920831"
+                id="Lap-Times-Current-Value" transform="scale(0.9208306,1.0859761)">00:00.000</text><text x="48.345074"
+                y="495.81561"
+                style="font-style:italic;font-stretch:condensed;font-size:109.97px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;clip-rule:evenodd;display:inline;fill:#fff;fill-rule:evenodd;stroke-width:0.974567;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+                id="Lap-Times-Current-Label" transform="scale(0.97456657,1.0260972)">CURRENT</text>
+            </g>
+          </g>
+          <g id="Lap-Counter"><text x="-30.408228" y="276.03632"
+              style="font-style:italic;font-stretch:condensed;font-size:386.606px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;fill:#fff;stroke-width:0.977923"
+              id="Lap-Counter-Value" transform="scale(0.9779228,1.0225756)">??</text><text x="343.87454" y="119.42258"
+              style="font-style:italic;font-stretch:condensed;font-size:167.259px;font-family:AmsiProCond-BoldItalic, Barlow Condensed, sans-serif;fill:#fff;stroke-width:0.962317"
+              id="Lap-Counter-Label" transform="scale(0.962317,1.0391586)">LAP</text></g>
+        </g>
       </g>
+    </g>
+    <g id="Roll">
+      <g id="Roll-Level" class="rotate">
+        <ellipse id="Roll-Level-Bounding_Circle" cx="1844.4611" cy="605.02234"
+          style="display:none;fill:#fe1c00;stroke-width:1.05436" rx="604.99701" ry="605.02228" />
+        <g id="Roll-Level-Indicator">
+          <path id="Roll-Level-Indicator-Lower"
+            d="M 2441.6767,597.43606 1912.5475,597.241 c -2.309,-10e-4 -4.5022,1.02485 -5.9783,2.80043 l -62.1134,74.53084 c 0,0 -62.1029,-74.53084 -62.1029,-74.53084 -1.4867,-1.77558 -3.6798,-2.80149 -5.9889,-2.80043 l -529.1292,0.19506 c -4.2913,10e-4 -7.7813,3.48894 -7.7707,7.78447 0,4.29449 3.49,7.77921 7.7813,7.77815 l 525.481,-0.19295 c 0,0 65.7511,78.90229 65.7511,78.90229 1.4761,1.77452 3.6692,2.79938 5.9783,2.79938 2.3091,0 4.5022,-1.02486 5.9783,-2.79938 l 65.751,-78.90229 c 0,0 525.4916,0.19295 525.4916,0.19295 4.2914,10e-4 7.7814,-3.48366 7.7814,-7.77815 0,-4.29553 -3.49,-7.78342 -7.7814,-7.78447 z"
+            style="display:inline;fill:#fff;stroke-width:1.05438" />
+          <path id="Roll-Level-Indicator-Upper"
+            d="m 1994.6414,436.32286 h -300.3713 c -3.2158,0 -5.8307,2.61486 -5.8307,5.83598 0,3.22007 2.6149,5.83599 5.8307,5.83599 h 300.3713 c 3.2264,0 5.8413,-2.61592 5.8413,-5.83599 0,-3.22112 -2.6149,-5.83598 -5.8413,-5.83598 z"
+            style="fill:#fff;fill-opacity:0.5;stroke-width:1.05438" />
+        </g>
+      </g>
+      <path id="Roll-Horizon"
+        d="m 2311.2923,593.35087 h -287.8769 c -6.4528,0 -11.672,5.2255 -11.672,11.67091 0,92.32558 -74.9557,167.28134 -167.2876,167.28134 -92.3214,0 -167.2771,-74.95576 -167.2771,-167.28134 0,-6.44541 -5.2298,-11.67091 -11.672,-11.67091 h -287.8769 c -6.4423,0 -11.672,5.22971 -11.672,11.67091 0,6.4412 5.2297,11.67092 11.672,11.67092 h 276.5634 c 6.031,99.78109 88.979,178.95224 190.2626,178.95224 101.2941,0 184.2315,-79.17115 190.2731,-178.95224 0,0 276.5634,0 276.5634,0 6.4423,0 11.672,-5.22972 11.672,-11.67092 0,-6.4412 -5.2297,-11.67091 -11.672,-11.67091 z m -466.8365,-4.80269 c 9.0993,0 16.4799,7.3817 16.4799,16.4736 0,9.09296 -7.3806,16.47466 -16.4799,16.47466 -9.0888,0 -16.4694,-7.3817 -16.4694,-16.47466 0,-9.0919 7.3806,-16.4736 16.4694,-16.4736 z"
+        style="display:inline;fill:#fef600;stroke-width:1.05438" />
+    </g>
     </g>
     <defs>
       <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
@@ -347,15 +349,15 @@
         </feMerge>
       </filter>
       <filter id="mini-glow" x="-100%" y="-100%" width="300%" height="300%">
-      
-      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
 
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+        <feGaussianBlur stdDeviation="10" result="coloredBlur" />
+
+        <feMerge>
+          <feMergeNode in="coloredBlur" />
+          <feMergeNode in="coloredBlur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
       <linearGradient id="_Linear5" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
         gradientTransform="matrix(270.29,0,0,57,889.415,2069.46)">
         <stop offset="0" style="stop-color:#fff;stop-opacity:0" id="stop1386" />
@@ -383,6 +385,10 @@
       </filter>
       <pattern y="0" x="0" height="6" width="6" patternUnits="userSpaceOnUse" id="EMFhbasepattern" />
       <pattern y="0" x="0" height="6" width="6" patternUnits="userSpaceOnUse" id="EMFhbasepattern-7" />
+      <linearGradient id="Gradient">
+        <stop offset="0%" style="stop-color:#fff;stop-opacity:0.5" id="stop184" />
+        <stop offset="100%" style="stop-color:#fff;stop-opacity:1" id="stop186" />
+      </linearGradient>
     </defs>
     <g id="Logo" style="display:none">
       <path id="rect452"

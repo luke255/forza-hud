@@ -11,6 +11,18 @@ const cache = {},
     rpm_percent: (v) => {
       svgBar("RPM", v);
     },
+    steering: (v) => {
+      console.log(v);
+      svgBar("Specs-Steering", v);
+    },
+    brake: (v) => {
+      console.log(v);
+      svgBar("Specs-Brake", v - 100);
+    },
+    accel: (v) => {
+      console.log(v);
+      svgBar("Specs-Accelerator", v);
+    },
     bearing: (v) => {
       svgRotate("Navigation-Dial", 360 - v);
     },
@@ -125,9 +137,9 @@ const cache = {},
   ready = () => {
     const svgObj = document.getElementById("svgObject");
     if (svgObj && svgObj.contentDocument) {
-        svg = svgObj.contentDocument;
+      svg = svgObj.contentDocument;
     } else {
-        svg = document.getElementById("The_SVG");
+      svg = document.getElementById("The_SVG");
     }
     initSocket();
   },
@@ -137,12 +149,10 @@ const cache = {},
   svgBar = (id, prcnt) => {
     const needle = svg.querySelectorAll(`#${id} .needle`)[0],
       trail = svg.querySelectorAll(`#${id} .trail`)[0];
-    needle.style.transform = `translateX(${
-      parseFloat(needle.dataset.scale) * prcnt
-    }px)`;
-    trail.style.transform = `scaleX(${
-      1 + parseFloat(trail.dataset.scale) * prcnt
-    })`;
+    needle.style.transform = `translateX(${parseFloat(needle.dataset.scale) * prcnt
+      }px)`;
+    trail.style.transform = `scaleX(${1 + parseFloat(trail.dataset.scale) * prcnt
+      })`;
   },
   svgDim = (id, dim) => {
     svg.getElementById(id).setAttribute("fill-opacity", dim ? "0.2" : "1");
