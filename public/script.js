@@ -102,7 +102,7 @@ const cache = {},
       svgTexter("Race-Position-Value", v);
     },
     timer_race: (v) => {
-      svgTexter("Race-Time", v);
+      svgTexter("Race-Time-Value", v);
     },
     timer_lap_current: (v) => {
       svgTexter("Lap-Times-Current-Value", v);
