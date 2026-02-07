@@ -9,6 +9,10 @@ A web-based Heads-Up Display (HUD) for Forza Horizon that receives telemetry dat
 - **Dynamic HUD:** SVG-based dashboard that updates in real-time.
 - **Easy Configuration:** Managed via environment variables.
 
+## Screenshots
+
+[<img src="./screenshots/roam.png" width="250"/>](./screenshots/roam.png)     [<img src="./screenshots/race.png" width="250"/>](./screenshots/race.png)
+
 ## Known Limitations/Issues
 - **Home Assistant Sensors:** While many telemetry points are received, only the "Active/Running" sensor is currently published to Home Assistant to avoid overwhelming systems.
 - **Aspect ratio:** The dashboard was created for fullscreen 16:9.
