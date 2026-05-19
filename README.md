@@ -24,7 +24,7 @@ A web-based Heads-Up Display (HUD) for Forza Horizon that receives telemetry dat
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v14 or later recommended)
-- A copy of Forza Horizon (4 or 5) set to send telemetry data.
+- A copy of Forza Horizon 4, 5 or 6 set to send telemetry data.
     - **Note for Forza Horizon 4:** The Xbox version has a known bug that prevents telemetry from working. The PC version is currently untested. Forza Horizon 5 is fully supported.
 
 ### Configuration Options (`.env`)
