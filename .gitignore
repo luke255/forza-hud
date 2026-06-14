@@ -137,3 +137,6 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Commercial font — licensed, not redistributable. Each user supplies their own.
+/public/fonts/AmsiProCondensed-*

@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-BlackItalic.eot");
+    src:
+        local("Amsi Pro Cond Black Italic"),
+        local("AmsiProCondensed-BlackItalic"),
+        url("AmsiProCondensed-BlackItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("AmsiProCondensed-BlackItalic.woff2") format("woff2"),
+        url("AmsiProCondensed-BlackItalic.woff") format("woff"),
+        url("AmsiProCondensed-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-LightItalic.eot");
+    src:
+        local("Amsi Pro Cond Light Italic"),
+        local("AmsiProCondensed-LightItalic"),
+        url("AmsiProCondensed-LightItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("AmsiProCondensed-LightItalic.woff2") format("woff2"),
+        url("AmsiProCondensed-LightItalic.woff") format("woff"),
+        url("AmsiProCondensed-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond Ultra";
+    src: url("AmsiProCondensed-UltraItalic.eot");
+    src:
+        local("Amsi Pro Cond Ultra Italic"),
+        local("AmsiProCondensed-UltraItalic"),
+        url("AmsiProCondensed-UltraItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("AmsiProCondensed-UltraItalic.woff2") format("woff2"),
+        url("AmsiProCondensed-UltraItalic.woff") format("woff"),
+        url("AmsiProCondensed-UltraItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-ExtraLight.eot");
+    src:
+        local("Amsi Pro Cond ExtraLight"),
+        local("AmsiProCondensed-ExtraLight"),
+        url("AmsiProCondensed-ExtraLight.eot?#iefix")
+            format("embedded-opentype"),
+        url("AmsiProCondensed-ExtraLight.woff2") format("woff2"),
+        url("AmsiProCondensed-ExtraLight.woff") format("woff"),
+        url("AmsiProCondensed-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-SemiBoldItalic.eot");
+    src:
+        local("Amsi Pro Cond SemiBold Italic"),
+        local("AmsiProCondensed-SemiBoldItalic"),
+        url("AmsiProCondensed-SemiBoldItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("AmsiProCondensed-SemiBoldItalic.woff2") format("woff2"),
+        url("AmsiProCondensed-SemiBoldItalic.woff") format("woff"),
+        url("AmsiProCondensed-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-SemiBold.eot");
+    src:
+        local("Amsi Pro Cond SemiBold"),
+        local("AmsiProCondensed-SemiBold"),
+        url("AmsiProCondensed-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("AmsiProCondensed-SemiBold.woff2") format("woff2"),
+        url("AmsiProCondensed-SemiBold.woff") format("woff"),
+        url("AmsiProCondensed-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-Thin.eot");
+    src:
+        local("Amsi Pro Cond Thin"),
+        local("AmsiProCondensed-Thin"),
+        url("AmsiProCondensed-Thin.eot?#iefix") format("embedded-opentype"),
+        url("AmsiProCondensed-Thin.woff2") format("woff2"),
+        url("AmsiProCondensed-Thin.woff") format("woff"),
+        url("AmsiProCondensed-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-Italic.eot");
+    src:
+        local("Amsi Pro Cond Italic"),
+        local("AmsiProCondensed-Italic"),
+        url("AmsiProCondensed-Italic.eot?#iefix") format("embedded-opentype"),
+        url("AmsiProCondensed-Italic.woff2") format("woff2"),
+        url("AmsiProCondensed-Italic.woff") format("woff"),
+        url("AmsiProCondensed-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-ExtraLightItalic.eot");
+    src:
+        local("Amsi Pro Cond ExtraLight Italic"),
+        local("AmsiProCondensed-ExtraLightItalic"),
+        url("AmsiProCondensed-ExtraLightItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("AmsiProCondensed-ExtraLightItalic.woff2") format("woff2"),
+        url("AmsiProCondensed-ExtraLightItalic.woff") format("woff"),
+        url("AmsiProCondensed-ExtraLightItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond Ultra";
+    src: url("AmsiProCondensed-Ultra.eot");
+    src:
+        local("Amsi Pro Cond Ultra"),
+        local("AmsiProCondensed-Ultra"),
+        url("AmsiProCondensed-Ultra.eot?#iefix") format("embedded-opentype"),
+        url("AmsiProCondensed-Ultra.woff2") format("woff2"),
+        url("AmsiProCondensed-Ultra.woff") format("woff"),
+        url("AmsiProCondensed-Ultra.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-Regular.eot");
+    src:
+        local("Amsi Pro Cond"),
+        local("AmsiProCondensed-Regular"),
+        url("AmsiProCondensed-Regular.eot?#iefix") format("embedded-opentype"),
+        url("AmsiProCondensed-Regular.woff2") format("woff2"),
+        url("AmsiProCondensed-Regular.woff") format("woff"),
+        url("AmsiProCondensed-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-Black.eot");
+    src:
+        local("Amsi Pro Cond Black"),
+        local("AmsiProCondensed-Black"),
+        url("AmsiProCondensed-Black.eot?#iefix") format("embedded-opentype"),
+        url("AmsiProCondensed-Black.woff2") format("woff2"),
+        url("AmsiProCondensed-Black.woff") format("woff"),
+        url("AmsiProCondensed-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-ThinItalic.eot");
+    src:
+        local("Amsi Pro Cond Thin Italic"),
+        local("AmsiProCondensed-ThinItalic"),
+        url("AmsiProCondensed-ThinItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("AmsiProCondensed-ThinItalic.woff2") format("woff2"),
+        url("AmsiProCondensed-ThinItalic.woff") format("woff"),
+        url("AmsiProCondensed-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-Bold.eot");
+    src:
+        local("Amsi Pro Cond Bold"),
+        local("AmsiProCondensed-Bold"),
+        url("AmsiProCondensed-Bold.eot?#iefix") format("embedded-opentype"),
+        url("AmsiProCondensed-Bold.woff2") format("woff2"),
+        url("AmsiProCondensed-Bold.woff") format("woff"),
+        url("AmsiProCondensed-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-Light.eot");
+    src:
+        local("Amsi Pro Cond Light"),
+        local("AmsiProCondensed-Light"),
+        url("AmsiProCondensed-Light.eot?#iefix") format("embedded-opentype"),
+        url("AmsiProCondensed-Light.woff2") format("woff2"),
+        url("AmsiProCondensed-Light.woff") format("woff"),
+        url("AmsiProCondensed-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amsi Pro Cond";
+    src: url("AmsiProCondensed-BoldItalic.eot");
+    src:
+        local("Amsi Pro Cond Bold Italic"),
+        local("AmsiProCondensed-BoldItalic"),
+        url("AmsiProCondensed-BoldItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("AmsiProCondensed-BoldItalic.woff2") format("woff2"),
+        url("AmsiProCondensed-BoldItalic.woff") format("woff"),
+        url("AmsiProCondensed-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
