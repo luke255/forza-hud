@@ -126,7 +126,7 @@ const cache = {},
   parse = (event) => {
     const data = JSON.parse(event.data);
     for (let [key, value] of Object.entries(data.values)) {
-      if (cache[key] !== value && handlers[key] !== undefined) {
+      if (cache[key] !== value && value !== null && handlers[key] !== undefined) {
         cache[key] = value;
         handlers[key](value, data.units[key]);
       }

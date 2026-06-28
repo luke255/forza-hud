@@ -189,7 +189,7 @@ function parseData(data) {
       accel: r.Accel,
       brake: r.Brake,
       handbrake: boolStr(r.HandBrake > 1),
-      gear: r.Gear.toString().replace("0", "R").replace("1R", "10"),
+      gear: (() => { const g = r.Gear; if (g === 0) return 'R'; if (g > 10) return null; return g.toString(); })(),
       steering: r.Steer,
       race: boolStr(r.RacePosition > 0),
       lap: r.LapNumber + 1,
