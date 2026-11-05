@@ -165,7 +165,7 @@ const cache = {},
     needle.style.transform = `translateX(${offset}px)`;
     trail.setAttribute(
       "d",
-      `M ${centre},2097.96 l 9.193,-57 H ${end + 9.193} l -9.193,57 Z`
+      `M ${centre},2097.96 l 9.19,-57 H ${end + 9.19} l -9.19,57 Z`
     );
     trail.style.fill = `url(#Steering-Gradient-${value < 0 ? "Left" : "Right"})`;
   },
