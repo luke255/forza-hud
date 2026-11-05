@@ -98,8 +98,12 @@
             style="fill:#fff;fill-opacity:0.2" />
           <path id="Specs-Steering-Gauge-Trail" data-centre="905.180" d="m 905.180,2097.96 9.19,-57 z"
             clip-path="url(#Steering-Clip)" style="fill:url(#Steering-Gradient-Right)" />
-          <path id="Specs-Steering-Gauge-Needle-Main" class="needle" data-scale="2.921063"
-            d="m 896.180,2097.96 9.19,-57 h 18 l -9.19,57 z" style="fill:#fff; filter:url(#mini-glow);" />
+          <g style="filter:url(#mini-glow)">
+            <g clip-path="url(#Steering-Clip)">
+              <path id="Specs-Steering-Gauge-Needle-Main" class="needle" data-scale="2.921063"
+                d="m 896.180,2097.96 9.19,-57 h 18 l -9.19,57 z" style="fill:#fff" />
+            </g>
+          </g>
         </g><text x="60.30933" y="2077.8357"
           style="font-stretch:condensed;font-size:111.167px;font-weight: bold;font-family:Amsi Pro Cond, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
           id="Specs-Steering-Label" transform="scale(0.98485887,1.0153739)">Steering</text>
@@ -109,11 +113,17 @@
           <path id="Specs-Brake-Gauge-Background"
             d="m 531.763,1916.98 744.017,-0.02 c 4.41,0 7.98,-3.58 7.98,-7.98 l 7.36,-41.04 c 0,-4.41 -3.58,-7.98 -7.98,-7.98 l -744.022,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
             style="fill:#fff;fill-opacity:0.2" />
-          <path id="Specs-Brake-Gauge-Trail" class="trail" data-scale="0.003820579"
-            d="m 1276.155,1916.98 9.19,-57 H 539.118 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
-            style="fill:url(#_Linear9)" />
-          <path id="Specs-Brake-Gauge-Main" class="needle" data-scale="2.909608"
-            d="m 1267.155,1916.98 9.19,-57 h 18 l -9.19,57 z" style="fill: #fff; filter:url(#mini-glow);" />
+          <g clip-path="url(#Brake-Clip)">
+            <path id="Specs-Brake-Gauge-Trail" class="trail" data-scale="0.003820579"
+              d="m 1276.155,1916.98 9.19,-57 H 539.118 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
+              style="fill:url(#_Linear9)" />
+          </g>
+          <g style="filter:url(#mini-glow)">
+            <g clip-path="url(#Brake-Clip)">
+              <path id="Specs-Brake-Gauge-Main" class="needle" data-scale="2.909608"
+                d="m 1267.155,1916.98 9.19,-57 h 18 l -9.19,57 z" style="fill:#fff" />
+            </g>
+          </g>
         </g><text x="58.756775" y="1898.611"
           style="font-stretch:condensed;font-size:111.167px;font-weight: bold;font-family:Amsi Pro Cond, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
           id="Specs-Brake-Label" transform="scale(0.98485887,1.0153739)">Brake</text>
@@ -123,11 +133,17 @@
           <path id="Specs-Accelerator-Gauge-Background"
             d="m 1285.45,1678.88 -744.019,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 l 744.024,-0.02 c 4.4,0 7.98,-3.58 7.98,-7.98 l 7.35,-41.04 c 0,-4.41 -3.58,-7.98 -7.98,-7.98 z"
             style="fill:#fff;fill-opacity:0.2" />
-          <path id="Specs-Accelerator-Gauge-Trail" class="trail" data-scale="0.003832217"
-            d="m 1276.155,1735.9 9.19,-57 H 541.431 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
-            style="fill:url(#_Linear13)" />
-          <path id="Specs-Accelerator-Gauge-Main" class="needle" data-scale="2.909608"
-            d="m 1267.155,1735.9 9.19,-57 h 18 l -9.19,57 z" style="fill: #fff; filter:url(#mini-glow);" />
+          <g clip-path="url(#Accelerator-Clip)">
+            <path id="Specs-Accelerator-Gauge-Trail" class="trail" data-scale="0.003832217"
+              d="m 1276.155,1735.9 9.19,-57 H 541.431 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
+              style="fill:url(#_Linear13)" />
+          </g>
+          <g style="filter:url(#mini-glow)">
+            <g clip-path="url(#Accelerator-Clip)">
+              <path id="Specs-Accelerator-Gauge-Main" class="needle" data-scale="2.909608"
+                d="m 1267.155,1735.9 9.19,-57 h 18 l -9.19,57 z" style="fill:#fff" />
+            </g>
+          </g>
         </g><text x="58.756775" y="1720.2727"
           style="font-stretch:condensed;font-size:111.167px;font-weight: bold;font-family:Amsi Pro Cond, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
           id="Specs-Accelerator-Label" transform="scale(0.98485887,1.0153739)">Accelerator</text>
@@ -370,6 +386,12 @@
       <clipPath id="RPM-Clip">
         <path
           d="m 3425.3101,2095.2 17.95,-111.28 h -1736.19 c -8.59,0 -15.57,6.98 -15.57,15.58 l -14.36,80.12 c 0,8.6 6.9796,15.58 15.5796,15.58 z m 333.8399,-95.7 c 0,-8.6 -6.98,-15.58 -15.58,-15.58 h -300.31 l -17.95,111.28 h 303.9 c 8.6,0 15.58,-6.98 15.58,-15.58 z" />
+      </clipPath>
+      <clipPath id="Brake-Clip">
+        <use href="#Specs-Brake-Gauge-Background" />
+      </clipPath>
+      <clipPath id="Accelerator-Clip">
+        <use href="#Specs-Accelerator-Gauge-Background" />
       </clipPath>
       <clipPath id="Steering-Clip">
         <path
