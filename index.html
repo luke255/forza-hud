@@ -96,8 +96,8 @@
           <path id="Specs-Steering-Gauge-Background"
             d="m 1285.45,2040.96 -744.019,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.41 3.576,7.98 7.98,7.98 l 744.024,-0.02 c 4.4,0 7.98,-3.57 7.98,-7.98 l 7.35,-41.04 c 0,-4.4 -3.58,-7.98 -7.98,-7.98 z"
             style="fill:#fff;fill-opacity:0.2" />
-          <path id="Specs-Steering-Gauge-Trail" class="trail" data-scale="0.0097" d="m 904.01,2097.96 9.193,-57 z"
-            style="fill:url(#_Linear5)" />
+          <path id="Specs-Steering-Gauge-Trail" data-centre="904.01" d="m 904.01,2097.96 9.193,-57 z"
+            clip-path="url(#Steering-Clip)" style="fill:url(#Steering-Gradient-Right)" />
           <path id="Specs-Steering-Gauge-Needle-Main" class="needle" data-scale="2.874015748"
             d="m 909.526,2097.96 9.194,-57 h -11.033 l -9.193,57 z" style="fill:#fff; filter:url(#mini-glow);" />
         </g><text x="60.30933" y="2077.8357"
@@ -123,11 +123,11 @@
           <path id="Specs-Accelerator-Gauge-Background"
             d="m 1285.45,1678.88 -744.019,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 l 744.024,-0.02 c 4.4,0 7.98,-3.58 7.98,-7.98 l 7.35,-41.04 c 0,-4.41 -3.58,-7.98 -7.98,-7.98 z"
             style="fill:#fff;fill-opacity:0.2" />
-          <path id="Specs-Accelerator-Gauge-Trail" class="trail" data-scale="0.00485"
-            d="m 540.691,1735.9 9.193,-57 h -8.453 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
+          <path id="Specs-Accelerator-Gauge-Trail" class="trail" data-scale="0.003803922"
+            d="m 1267.3,1735.9 9.2,-57 H 539.118 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.4 3.576,7.98 7.98,7.98 z"
             style="fill:url(#_Linear13)" />
           <path id="Specs-Accelerator-Gauge-Main" class="needle" data-scale="2.862745098"
-            d="m 546.22,1735.9 9.194,-57 h -11.033 l -9.193,57 z" style="fill: #fff; filter:url(#mini-glow);" />
+            d="m 1270.99,1678.88 -9.19,57 h 11.03 l 9.2,-57 z" style="fill: #fff; filter:url(#mini-glow);" />
         </g><text x="58.756775" y="1720.2727"
           style="font-stretch:condensed;font-size:111.167px;font-weight: bold;font-family:Amsi Pro Cond, Barlow Condensed, sans-serif;fill:#736e78;stroke-width:0.984859"
           id="Specs-Accelerator-Label" transform="scale(0.98485887,1.0153739)">Accelerator</text>
@@ -359,11 +359,18 @@
           <feMergeNode in="SourceGraphic" />
         </feMerge>
       </filter>
-      <linearGradient id="_Linear5" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
-        gradientTransform="matrix(270.29,0,0,57,889.415,2069.46)">
-        <stop offset="0" style="stop-color:#fff;stop-opacity:0" id="stop1386" />
-        <stop offset="1" style="stop-color:#fff;stop-opacity:0.5" id="stop1388" />
+      <linearGradient id="Steering-Gradient-Right" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" style="stop-color:#fff;stop-opacity:0" />
+        <stop offset="0.359" style="stop-color:#fff;stop-opacity:0.5" />
       </linearGradient>
+      <linearGradient id="Steering-Gradient-Left" x1="1" y1="0" x2="0" y2="0">
+        <stop offset="0" style="stop-color:#fff;stop-opacity:0" />
+        <stop offset="0.359" style="stop-color:#fff;stop-opacity:0.5" />
+      </linearGradient>
+      <clipPath id="Steering-Clip">
+        <path
+          d="m 1285.45,2040.96 -744.019,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.41 3.576,7.98 7.98,7.98 l 744.024,-0.02 c 4.4,0 7.98,-3.57 7.98,-7.98 l 7.35,-41.04 c 0,-4.4 -3.58,-7.98 -7.98,-7.98 z" />
+      </clipPath>
       <filter id="_Effect6" filterUnits="userSpaceOnUse" x="809.461" y="1951.93" width="198.29" height="235.065">
         <feGaussianBlur in="SourceGraphic" stdDeviation="13" id="feGaussianBlur1391" />
       </filter>
@@ -376,7 +383,7 @@
         <feGaussianBlur in="SourceGraphic" stdDeviation="13" id="feGaussianBlur1409" />
       </filter>
       <linearGradient id="_Linear13" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
-        gradientTransform="matrix(270.29,0,0,57,526.096,1707.4)">
+        gradientTransform="matrix(270.29,0,0,57,523.783,1707.4)">
         <stop offset="0" style="stop-color:#fff;stop-opacity:0" id="stop1422" />
         <stop offset="1" style="stop-color:#fff;stop-opacity:0.5" id="stop1424" />
       </linearGradient>

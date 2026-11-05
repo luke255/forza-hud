@@ -12,13 +12,13 @@ const cache = {},
       svgBar("RPM", v);
     },
     steering: (v) => {
-      svgBar("Specs-Steering", v);
+      svgCentreBar("Specs-Steering", v);
     },
     brake: (v) => {
       svgBar("Specs-Brake", v - 255);
     },
     accel: (v) => {
-      svgBar("Specs-Accelerator", v);
+      svgBar("Specs-Accelerator", v - 255);
     },
     bearing: (v) => {
       svgRotate("Navigation-Dial", 360 - v);
@@ -153,6 +153,21 @@ const cache = {},
       }px)`;
     trail.style.transform = `scaleX(${1 + parseFloat(trail.dataset.scale) * prcnt
       })`;
+  },
+  // Bar whose rest position is the middle: the trail runs from the centre
+  // out to the needle, left or right, with the gradient fading in from the centre
+  svgCentreBar = (id, value) => {
+    const needle = svg.querySelectorAll(`#${id} .needle`)[0],
+      trail = svg.getElementById(`${id}-Gauge-Trail`),
+      offset = parseFloat(needle.dataset.scale) * value,
+      centre = parseFloat(trail.dataset.centre),
+      end = centre + offset;
+    needle.style.transform = `translateX(${offset}px)`;
+    trail.setAttribute(
+      "d",
+      `M ${centre},2097.96 l 9.193,-57 H ${end + 9.193} l -9.193,57 Z`
+    );
+    trail.style.fill = `url(#Steering-Gradient-${value < 0 ? "Left" : "Right"})`;
   },
   svgDim = (id, dim) => {
     svg.getElementById(id).setAttribute("fill-opacity", dim ? "0.2" : "1");
