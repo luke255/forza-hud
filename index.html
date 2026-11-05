@@ -72,13 +72,13 @@
             <path id="RPM-Background"
               d="m 3425.3101,2095.2 17.95,-111.28 h -1736.19 c -8.59,0 -15.57,6.98 -15.57,15.58 l -14.36,80.12 c 0,8.6 6.9796,15.58 15.5796,15.58 z m 333.8399,-95.7 c 0,-8.6 -6.98,-15.58 -15.58,-15.58 h -300.31 l -17.95,111.28 h 303.9 c 8.6,0 15.58,-6.98 15.58,-15.58 z"
               style="display:inline;fill:#fff;fill-opacity:0.2" />
-            <path id="RPM-Trail" class="trail" data-scale="0.541855326723" style="display:inline;fill:url(#Gradient)"
-              d="m 1677.14,1983.92 h 37.1201 V 2095.2 H 1677.14 Z" />
+            <g clip-path="url(#RPM-Clip)">
+              <path id="RPM-Trail" class="trail" data-scale="0.541855326723" style="display:inline;fill:url(#Gradient)"
+                d="m 1677.14,1983.92 h 37.1201 V 2095.2 H 1677.14 Z" />
+            </g>
             <path id="RPM-Redline"
               d="m 3759.15,1999.5 c 0,-8.6 -6.9796,-15.58 -15.5796,-15.58 H 3443.26 l -17.95,111.28 h 303.9 c 8.6,0 15.58,-6.98 15.58,-15.58 z"
               style="display:inline;fill:#ff4444;fill-opacity:0.51" />
-            <path id="RPM-Trail_Mask" style="display:inline;fill:#000"
-              d="m 1677.1392,1983.9207 v 95.6986 l 14.3599,-80.1184 c 0,-8.6 6.981,-15.5802 15.571,-15.5802 z m 0,95.6986 v 15.5802 h 15.5802 c -8.6,0 -15.5802,-6.9802 -15.5802,-15.5802 z" />
             <path id="RPM-Needle" class="needle" data-scale="20.113609"
               d="m 1714.2601,2095.2 17.9494,-111.28 h -21.5397 l -17.9501,111.28 z"
               style="display:inline; fill:#fff; filter:url(#glow);" />
@@ -367,6 +367,10 @@
         <stop offset="0" style="stop-color:#fff;stop-opacity:0" />
         <stop offset="0.359" style="stop-color:#fff;stop-opacity:0.5" />
       </linearGradient>
+      <clipPath id="RPM-Clip">
+        <path
+          d="m 3425.3101,2095.2 17.95,-111.28 h -1736.19 c -8.59,0 -15.57,6.98 -15.57,15.58 l -14.36,80.12 c 0,8.6 6.9796,15.58 15.5796,15.58 z m 333.8399,-95.7 c 0,-8.6 -6.98,-15.58 -15.58,-15.58 h -300.31 l -17.95,111.28 h 303.9 c 8.6,0 15.58,-6.98 15.58,-15.58 z" />
+      </clipPath>
       <clipPath id="Steering-Clip">
         <path
           d="m 1285.45,2040.96 -744.019,0.02 c -4.404,0 -7.98,3.58 -7.98,7.98 l -7.355,41.04 c 0,4.41 3.576,7.98 7.98,7.98 l 744.024,-0.02 c 4.4,0 7.98,-3.57 7.98,-7.98 l 7.35,-41.04 c 0,-4.4 -3.58,-7.98 -7.98,-7.98 z" />
