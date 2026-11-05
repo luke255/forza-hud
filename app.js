@@ -190,6 +190,8 @@ function parseData(data) {
       brake: r.Brake,
       handbrake: boolStr(r.HandBrake > 1),
       gear: (() => { const g = r.Gear; if (g === 0) return 'R'; if (g > 10) return null; return g.toString(); })(),
+      // FH reports gear 11 mid-shift; flag it so the HUD can grey out the last gear
+      shifting: boolStr(r.Gear > 10),
       steering: r.Steer,
       race: boolStr(r.RacePosition > 0),
       lap: r.LapNumber + 1,

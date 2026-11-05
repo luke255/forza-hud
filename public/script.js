@@ -88,6 +88,9 @@ const cache = {},
     gear: (v) => {
       svgTexter("Gear-Value", v);
     },
+    shifting: (v) => {
+      svg.getElementById("Gear-Value").style.fill = strBool(v) ? "#736e78" : "#fff";
+    },
     handbrake: (v) => {
       svgDim("Handbrake", !strBool(v));
     },
