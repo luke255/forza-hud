@@ -122,6 +122,8 @@ const cache = {},
     const port = window.location.port || '8080';
     const socket = new WebSocket(`ws://${host}:${port}`);
     socket.onmessage = parse;
+    // Reconnect after server restarts so kiosks never stick on the logo
+    socket.onclose = () => setTimeout(initSocket, 2000);
   },
   parse = (event) => {
     const data = JSON.parse(event.data);

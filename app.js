@@ -20,8 +20,7 @@ const units = {
   boost: BOOST_UNIT,
 };
 
-let cache = {},
-  webSocket;
+let cache = {};
 
 const socket = dgram.createSocket("udp4"),
   client = mqtt.connect(process.env.MQTT_BROKER_URL, {
@@ -97,9 +96,10 @@ function initMQTT(options) {
   socket.on("message", (...args) => {
     const fullData = parseData(args[0].toJSON().data),
       data = JSON.stringify({ active: fullData.values.active });
-    if (webSocket !== undefined) {
-      webSocket.send(JSON.stringify(fullData));
-    }
+    const payload = JSON.stringify(fullData);
+    wss.clients.forEach((ws) => {
+      if (ws.readyState === WebSocket.OPEN) ws.send(payload);
+    });
     if (data !== cache) {
       client.publish(state_topic, data);
       cache = data;
@@ -351,8 +351,5 @@ const express = require("express"),
 app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/index.html"));
-});
-wss.on("connection", (ws) => {
-  webSocket = ws;
 });
 server.listen(process.env.PORT || 8080);
