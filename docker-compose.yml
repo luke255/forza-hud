@@ -15,6 +15,7 @@ services:
       - POWER_UNIT=${POWER_UNIT:-kW}
       - TORQUE_UNIT=${TORQUE_UNIT:-Nm}
       - BOOST_UNIT=${BOOST_UNIT:-bar}
+      - NAV_CENTRE=${NAV_CENTRE:-clock}
       - MQTT_BROKER_URL=${MQTT_BROKER_URL:-mqtt://localhost:1883}
       - MQTT_USERNAME=${MQTT_USERNAME:-}
       - MQTT_PASSWORD=${MQTT_PASSWORD:-}

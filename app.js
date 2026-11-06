@@ -9,6 +9,8 @@ const SPEED_UNIT = process.env.SPEED_UNIT || 'km/h';
 const POWER_UNIT = process.env.POWER_UNIT || 'kW';
 const TORQUE_UNIT = process.env.TORQUE_UNIT || 'Nm';
 const BOOST_UNIT = process.env.BOOST_UNIT || 'bar';
+// What sits in the middle of the navigation dial: 'clock' (default) or 'direction'
+const NAV_CENTRE = process.env.NAV_CENTRE === 'direction' ? 'direction' : 'clock';
 
 const units = {
   rpm_percent: "%",
@@ -145,7 +147,8 @@ function parseData(data) {
       rpm_max: r.EngineMaxRpm,
       rpm_percent: percent(r.CurrentEngineRpm, r.EngineMaxRpm, 10),
       bearing: radsToBear(r.Yaw),
-      direction: bearLost(r.Yaw),
+      direction: NAV_CENTRE === 'direction' ? bearLost(r.Yaw) : null,
+      nav_centre: NAV_CENTRE,
       roll: radsToBear(r.Roll),
       class: ["D", "C", "B", "A", "S1", "S2", "X"][r.CarClass],
       performance: r.CarPerformanceIndex,

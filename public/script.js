@@ -119,6 +119,16 @@ const cache = {},
     direction: (v) => {
       svgTexter("Navigation-Direction", v);
     },
+    nav_centre: (v) => {
+      const on = v === "clock";
+      svgHide("Navigation-Direction", on);
+      svgHide("Navigation-Clock", !on);
+      clearInterval(clockTimer);
+      if (on) {
+        tickClock();
+        clockTimer = setInterval(tickClock, 1000);
+      }
+    },
   },
   initSocket = () => {
     const host = window.location.hostname || 'localhost';
@@ -193,8 +203,15 @@ const cache = {},
   },
   svgTexter = (id, text) => {
     svg.getElementById(id).childNodes[0].nodeValue = text;
+  },
+  // Uses the kiosk's own clock and time zone, 24-hour
+  tickClock = () => {
+    const now = new Date(),
+      pad = (n) => String(n).padStart(2, "0");
+    svgTexter("Navigation-Clock", `${pad(now.getHours())}:${pad(now.getMinutes())}`);
   };
-let svg = null;
+let svg = null,
+  clockTimer = null;
 document.onreadystatechange = () => {
   if (document.readyState == "complete") {
     ready();
