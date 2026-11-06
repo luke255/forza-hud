@@ -46,6 +46,7 @@ A web-based Heads-Up Display (HUD) for Forza Horizon that receives telemetry dat
 | `TORQUE_UNIT` | Unit for torque display (`Nm`, `lb-ft`) | `Nm` |
 | `BOOST_UNIT` | Unit for boost display (`bar`, `psi`, `kPa`) | `bar` |
 | `NAV_CENTRE` | What's shown inside the navigation dial (`clock`, `direction`) | `clock` |
+| `CLOCK_FORMAT` | Clock style when `NAV_CENTRE` is `clock` (`12h` with no am/pm, `24h`) | `12h` |
 
 ### Forza Horizon Setup
 

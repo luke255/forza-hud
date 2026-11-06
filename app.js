@@ -11,6 +11,8 @@ const TORQUE_UNIT = process.env.TORQUE_UNIT || 'Nm';
 const BOOST_UNIT = process.env.BOOST_UNIT || 'bar';
 // What sits in the middle of the navigation dial: 'clock' (default) or 'direction'
 const NAV_CENTRE = process.env.NAV_CENTRE === 'direction' ? 'direction' : 'clock';
+// Clock style for the dial: '12h' (default, no am/pm) or '24h'
+const CLOCK_FORMAT = process.env.CLOCK_FORMAT === '24h' ? '24h' : '12h';
 
 const units = {
   rpm_percent: "%",
@@ -149,6 +151,7 @@ function parseData(data) {
       bearing: radsToBear(r.Yaw),
       direction: NAV_CENTRE === 'direction' ? bearLost(r.Yaw) : null,
       nav_centre: NAV_CENTRE,
+      clock_format: CLOCK_FORMAT,
       roll: radsToBear(r.Roll),
       class: ["D", "C", "B", "A", "S1", "S2", "X"][r.CarClass],
       performance: r.CarPerformanceIndex,

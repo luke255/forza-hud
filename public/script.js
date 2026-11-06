@@ -129,6 +129,10 @@ const cache = {},
         clockTimer = setInterval(tickClock, 1000);
       }
     },
+    clock_format: (v) => {
+      clockFormat = v;
+      if (clockTimer) tickClock();
+    },
   },
   initSocket = () => {
     const host = window.location.hostname || 'localhost';
@@ -204,14 +208,17 @@ const cache = {},
   svgTexter = (id, text) => {
     svg.getElementById(id).childNodes[0].nodeValue = text;
   },
-  // Uses the kiosk's own clock and time zone, 24-hour
+  // Uses the kiosk's own clock and time zone; 12-hour has no leading zero or am/pm
   tickClock = () => {
     const now = new Date(),
-      pad = (n) => String(n).padStart(2, "0");
-    svgTexter("Navigation-Clock", `${pad(now.getHours())}:${pad(now.getMinutes())}`);
+      h = now.getHours(),
+      mm = String(now.getMinutes()).padStart(2, "0"),
+      hh = clockFormat === "24h" ? String(h).padStart(2, "0") : String(h % 12 || 12);
+    svgTexter("Navigation-Clock", `${hh}:${mm}`);
   };
 let svg = null,
-  clockTimer = null;
+  clockTimer = null,
+  clockFormat = "12h";
 document.onreadystatechange = () => {
   if (document.readyState == "complete") {
     ready();
